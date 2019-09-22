@@ -46,11 +46,8 @@ body {
   font-size: 1em;
 }
 
-.menu nav,
-ul,
-li,
-a,
-p {
+.menu ul,
+li {
   font-family: 'Quicksand', Arial, sans-serif;
   text-align: center;
   font-weight: normal;
@@ -61,11 +58,113 @@ p {
   text-align: center;
   padding-left: 0px;
   padding: 2px;
+  list-style: underline;
+  cursor: pointer;
 
+}
+
+.menu li:hover {
+
+  font-weight: bold;
+  color: blueviolet;
+
+
+}
+
+.home {
+  color: blueviolet;
+}
+
+.menu p {
+  text-align: center;
+  font-weight: normal;
+  font-size: 0.9em;
+  text-decoration: none;
+  font-family: 'Quicksand', Arial, sans-serif;
 
 }
 
 .content {
   grid-area: c;
   height: 1000px;
+}
+
+.hero {
+
+  height: 100vh;
+  width: 80vw;
+  box-shadow: border-box;
+  background: #f5f5f0;
+}
+
+.hero-image {
+  display: block;
+  margin-left: auto;
+  opacity: 0.2;
+}
+
+.hero-text {
+
+  position: relative;
+  text-align: left;
+  margin-top: -450px;
+  margin-left: 50px;
+  font-size: 70px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #9900ff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.about {
+  height: 100vh;
+  width: 80vw;
+  box-shadow: border-box;
+  background: #f5f5f0;
 }
