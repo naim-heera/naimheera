@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Playfair+Display:400,500,600,700,800,900|Poppins:300,400,500,600,700,800,900&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   box-shadow: border-box;
+
+  /* font-family: 'Playfair Display', serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif; */
+
+}
+
+.container {
+  background-color: #7510f7;
 }
 
 .topnav {
@@ -24,6 +35,9 @@ body {
   font-size: 1.2em;
   display: block;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+
 }
 
 .topnav a.icon {
@@ -32,12 +46,13 @@ body {
   position: absolute;
   right: 0;
   top: 0;
+
 }
 
 
 .topnav a:hover {
 
-  color: black;
+  color: #000000;
 }
 
 
@@ -49,20 +64,46 @@ body {
   margin-top: 5%;
 }
 
-.title {
-  text-align: center;
-  font-size: 2.5em;
-}
-
-.job-title {
-  text-align: center;
-  font-size: 1.5em;
-}
 
 #logo {
-  color: #7510f7;
+  color: #ffffff;
   font-size: 2.2em;
   font-weight: bold;
   text-align: left;
 
+}
+
+.content {
+  text-align: center;
+  background-color: ;
+  height: 15vh;
+}
+
+.typewrite {
+  font-size: 6vw;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.08em;
+
+}
+
+.button {
+  background: transparent;
+  border: 1px solid white;
+  display: inline-block;
+  float: none;
+  text-align: center;
+  padding: 8px;
+  font-size: 0.8em;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  margin: 5px;
+
+}
+
+.button:hover {
+
+  background: #8c39f9
 }
