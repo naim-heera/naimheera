@@ -107,3 +107,37 @@ body {
 
   background: #8c39f9
 }
+
+.about-me {
+  margin-top: 15%;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  color: #7510f7;
+}
+
+.me-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  height: auto;
+}
+
+.me-h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  color: #666666;
+
+}
+
+.me-para {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: #000000;
+
+}
