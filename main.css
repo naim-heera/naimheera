@@ -151,35 +151,47 @@ body {
 
 }
 
+.progressbar h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  color: #666666;
+  margin: auto;
+
+}
+
+.skill-progress {
+  margin-bottom: 10px;
+}
 
 .progress {
-  background: red;
-  justify-content: flex-start;
-  border-radius: 100px;
-  align-items: center;
-  position: relative;
-  padding: 0 5px;
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  height: 25px;
+  width: 450px;
+  margin: auto;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.progress-done {
+
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  box-shadow: 0 3px 3px -5px #f83600, 0 2px 5px #f83600;
+  border-radius: 20px;
+  color: #fff;
   display: flex;
-  height: 40px;
-  width: 500px;
-}
-
-.progress-value {
-  animation: load 3s normal forwards;
-  box-shadow: 0 10px 40px -10px #fff;
-  border-radius: 100px;
-  background: green;
-  height: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   width: 0;
-  -webkit-animation: load 3s normal forwards;
-}
+  opacity: 0;
+  transition: 1s ease 0.3s;
 
-@keyframes load {
-  0% {
-    width: 0;
-  }
 
-  100% {
-    width: 68%;
-  }
+  -webkit-transition: ;
+  -moz-transition: ;
+  -ms-transition: ;
+  -o-transition: ;
 }

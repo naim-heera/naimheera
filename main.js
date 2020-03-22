@@ -64,3 +64,7 @@ window.onload = function () {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.1em solid #009999}";
   document.body.appendChild(css);
 };
+const progress = document.querySelector('.progress-done');
+
+progress.style.width = progress.getAttribute('data-done') + '%';
+progress.style.opacity = 1;
