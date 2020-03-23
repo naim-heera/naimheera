@@ -71,11 +71,12 @@ progresses.forEach(progress => {
   const timeoutDuration = +duration.slice(0, 1) * 1000;
   progress.style.width = done + "%";
   progress.style.opacity = 1;
+
+
   for (let i = 0; i <= done; i++) {
     setTimeout(() => {
       progress.innerText = i + "%";
     }, (timeoutDuration / done) * i);
   }
-
 
 });
