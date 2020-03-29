@@ -175,6 +175,7 @@ body {
   -o-border-radius: 20px;
 }
 
+
 .progress-done {
   background: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   box-shadow: 0 3px 3px -5px #f83600, 0 2px 5px #f9d423;
