@@ -98,7 +98,8 @@ body {
 }
 
 .about-me {
-  margin-top: 15%;
+  margin-top: 80px;
+  padding-bottom: 30px;
 }
 
 .title {
@@ -112,9 +113,12 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 15%;
+  width: 20%;
   height: auto;
+}
 
+.me-img:hover {
+  width: 25%;
 }
 
 .me-h2 {
@@ -122,10 +126,11 @@ body {
   font-size: 1.4em;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #0066ff;
+  color: #009999;
+}
 
-
-
+.me-h2:hover {
+  font-size: 1.6em;
 }
 
 .me-para {
@@ -133,15 +138,11 @@ body {
   font-size: 1.2em;
   letter-spacing: 2px;
   color: #000000;
-
 }
-
-.skills {}
 
 .img-skill {
   margin-bottom: 30px;
   width: 120px;
-
 }
 
 .progressbar h3 {
