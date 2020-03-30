@@ -145,12 +145,11 @@ body {
   width: 120px;
 }
 
-.progressbar h3 {
+.skills {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #666666;
-  margin: auto;
-
+  margin-bottom: -15px;
 }
 
 .skill-progress {
@@ -171,10 +170,13 @@ body {
 
 
 .progress-done {
-  background: linear-gradient(to right, #f83600 0%, #f9d423 100%);
-  box-shadow: 0 3px 3px -5px #f83600, 0 2px 5px #f9d423;
+  background: linear-gradient(to right, #ff0844 0%, #ffb199 100%);
+  box-shadow: 0 3px 3px -5px #ff0844, 0 2px 5px #ffb199;
   border-radius: 20px;
-  color: #fff;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8em;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,14 +184,39 @@ body {
   width: 0;
   opacity: 0;
   transition: 4s ease 0.3s;
-  -webkit-transition: ;
-  -moz-transition: ;
-  -ms-transition: ;
-  -o-transition: ;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
+  -webkit-transition: 4s ease 0.3s;
+  -moz-transition: 4s ease 0.3s;
+  -ms-transition: 4s ease 0.3s;
+  -o-transition: 4s ease 0.3s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.progress-done1 {
+  background: linear-gradient(to right, #1477c8 0%, #5eabeb 100%);
+  box-shadow: 0 3px 3px -5px #1477c8, 0 2px 5px #5eabeb;
+}
+
+.progress-done2 {
+  background: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
+  box-shadow: 0 3px 3px -5px #c471f5, 0 2px 5px #fa71cd;
+}
+
+.progress-done3 {
+  background: linear-gradient(to right, #ff5858 0%, #f09819 100%);
+  box-shadow: 0 3px 3px -5px #ff5858, 0 2px 5px #f09819;
+}
+
+.progress-done4 {
+  background: linear-gradient(to right, #48be58 0%, #acd649 100%);
+  box-shadow: 0 3px 3px -5px #96e6a1, 0 2px 5px #acd649;
+}
+
+.progress-done5 {
+  background: linear-gradient(to right, #2614c8 0%, #6b5fd8 100%);
+  box-shadow: 0 3px 3px -5px #2614c8, 0 2px 5px #5445d8;
 }
 
 .portfolio-title {
