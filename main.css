@@ -162,10 +162,10 @@ body {
   height: 25px;
   width: 450px;
   margin: 20px auto;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 
@@ -188,10 +188,10 @@ body {
   -moz-transition: 4s ease 0.3s;
   -ms-transition: 4s ease 0.3s;
   -o-transition: 4s ease 0.3s;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 .progress-done1 {
@@ -316,10 +316,10 @@ body {
   margin-top: -4rem;
   margin-left: 1rem;
   border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 .title2 {
@@ -380,4 +380,97 @@ body {
   font-size: 1.0em;
   letter-spacing: 2px;
   color: #ffffff;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8em;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: absolute;
+  margin-top: 360px;
+  margin-left: 100px;
+}
+
+#name,
+#cname,
+#email,
+#ptitle,
+#subject {
+  background: transparent;
+}
+
+
+input::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+textarea::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #009999;
+  border-radius: 7px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  /*background-color: #4CAF50;
+  */
+  background: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #4CAF50;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border-radius: 7px;
+  cursor: pointer;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact-form {
+
+  width: 90vw;
+  background-color: #7510f7;
+  padding: 20px;
+  position: absolute;
+  margin-top: 400px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
