@@ -509,15 +509,13 @@ input[type=submit]:hover {
   letter-spacing: 2px;
 }
 
-/* .media-icon {
-  fill: #ffffff;
-  width: 20px;
-  padding: 15px;
-  border: 1px solid #ffffff;
-  border-radius: 50px;
-  display: inline-block;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-} */
+.media-icon {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.media-icon:hover {
+  height: 50px;
+  width: 50px;
+
+}
