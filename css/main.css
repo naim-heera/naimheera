@@ -108,7 +108,7 @@ body {
   padding-bottom: 30px;
 }
 
-.about h1 {
+.about .title {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   color: #7510f7;
@@ -144,5 +144,227 @@ body {
   font-size: 1.2rem;
   color: #000000;
   letter-spacing: 2px;
+}
+
+.roadmap .title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #7510f7;
+  font-weight: 600;
+}
+
+.roadmap .skills {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: -15px;
+}
+
+.roadmap img {
+  margin-bottom: 30px;
+  width: 120px;
+}
+
+.progressbar .title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #7510f7;
+  font-weight: 600;
+}
+
+.progressbar .skill-progress {
+  margin-bottom: 10px;
+}
+
+.progressbar .progress {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  height: 25px;
+  width: 450px;
+  margin: 20px auto;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.progressbar .progress-done {
+  background: -webkit-gradient(linear, left top, right top, from(#ff0844), to(#ffb199));
+  background: linear-gradient(to right, #ff0844 0%, #ffb199 100%);
+  -webkit-box-shadow: 0 3px 3px -5px #ff0844, 0 2px 5px #ffb199;
+          box-shadow: 0 3px 3px -5px #ff0844, 0 2px 5px #ffb199;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 4s ease 0.3s;
+  -webkit-transition: 4s ease 0.3s;
+  -moz-transition: 4s ease 0.3s;
+  -ms-transition: 4s ease 0.3s;
+  -o-transition: 4s ease 0.3s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.progressbar .progress-done1 {
+  background: -webkit-gradient(linear, left top, right top, from(#1477c8), to(#5eabeb));
+  background: linear-gradient(to right, #1477c8 0%, #5eabeb 100%);
+  -webkit-box-shadow: 0 3px 3px -5px #1477c8, 0 2px 5px #5eabeb;
+          box-shadow: 0 3px 3px -5px #1477c8, 0 2px 5px #5eabeb;
+}
+
+.progressbar .progress-done2 {
+  background: -webkit-gradient(linear, left top, right top, from(#c471f5), to(#fa71cd));
+  background: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
+  -webkit-box-shadow: 0 3px 3px -5px #c471f5, 0 2px 5px #fa71cd;
+          box-shadow: 0 3px 3px -5px #c471f5, 0 2px 5px #fa71cd;
+}
+
+.progressbar .progress-done3 {
+  background: -webkit-gradient(linear, left top, right top, from(#ff5858), to(#f09819));
+  background: linear-gradient(to right, #ff5858 0%, #f09819 100%);
+  -webkit-box-shadow: 0 3px 3px -5px #ff5858, 0 2px 5px #f09819;
+          box-shadow: 0 3px 3px -5px #ff5858, 0 2px 5px #f09819;
+}
+
+.progressbar .progress-done4 {
+  background: -webkit-gradient(linear, left top, right top, from(#48be58), to(#acd649));
+  background: linear-gradient(to right, #48be58 0%, #acd649 100%);
+  -webkit-box-shadow: 0 3px 3px -5px #96e6a1, 0 2px 5px #acd649;
+          box-shadow: 0 3px 3px -5px #96e6a1, 0 2px 5px #acd649;
+}
+
+.progressbar .progress-done5 {
+  background: -webkit-gradient(linear, left top, right top, from(#2614c8), to(#6b5fd8));
+  background: linear-gradient(to right, #2614c8 0%, #6b5fd8 100%);
+  -webkit-box-shadow: 0 3px 3px -5px #2614c8, 0 2px 5px #5445d8;
+          box-shadow: 0 3px 3px -5px #2614c8, 0 2px 5px #5445d8;
+}
+
+.portfolio {
+  margin-top: 50px;
+}
+
+.portfolio .title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #7510f7;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  color: #666666;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.portfolio img {
+  width: 90%;
+  height: auto;
+}
+
+.portfolio button {
+  background: transparent;
+  border: 2px solid #7510f7;
+  border-radius: 5px;
+  display: inline-block;
+  float: none;
+  text-align: center;
+  padding: 6px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #7510f7;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  margin: 5px;
+}
+
+.portfolio button:hover {
+  background: #8c39f9;
+  color: #ffffff;
+}
+
+.portfolio p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #000000;
+  letter-spacing: 2px;
+}
+
+.education embed {
+  height: 399px;
+  width: 283px;
+  margin-bottom: 200px;
+}
+
+.contact {
+  background: #7510f7;
+  height: 170vh;
+  position: relative;
+}
+
+.contact .hire-me {
+  background-color: #141c3a;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
+  height: 40vh;
+  width: 90vw;
+  position: absolute;
+  margin-top: -4rem;
+  margin-left: 1rem;
+  border-radius: 12px;
+}
+
+.contact h1 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+
+.contact p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.contact button {
+  border: 2px solid #7510f7;
+  padding: 1.25em 2em;
+  font-weight: 400;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 25px;
+  background: transparent;
+  display: inline-block;
+  float: none;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+
+.contact:hover {
+  background-color: #7510f7;
 }
 /*# sourceMappingURL=main.css.map */
