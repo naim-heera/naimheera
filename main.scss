@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Playfair+Display:400,500,600,700,800,900|Poppins:300,400,500,600,700,800,900&display=swap');
+
+$primary-font: 'Poppins',
+sans-serif;
+$secondary-font:'Playfair Display',
+serif;
+$background-color: #7510f7;
+$text-color : #ffffff;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+  /* font-family: 'Playfair Display', serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif; */
+}
+
+.container {
+  background-color: $background-color;
+
+}
+
+.menu {
+  background-color: $background-color;
+
+
+
+  div {
+    overflow: hidden;
+    position: relative;
+
+    nav {
+      background-color: $background-color;
+      display: none;
+    }
+
+    a {
+      font-family: $primary-font;
+      font-size: 1.2rem;
+      color: $text-color;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      padding: 14px 16px;
+
+      &:hover {
+        color: #000000;
+      }
+    }
+
+    .icon {
+      background: $background-color;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    #logo {
+      color: $text-color;
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-align: left;
+    }
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+}
+
+.content {
+  text-align: center;
+  background-color: $background-color;
+  height: 15vh;
+}
+
+.hero {
+  text-align: center;
+  background-color: $background-color;
+  height: 15vh;
+
+
+  a {
+    color: #ffffff;
+    font-family: $secondary-font;
+    font-size: 6vw;
+    text-decoration: none;
+    letter-spacing: 0.08rem;
+  }
+
+  button {
+    font-family: $primary-font;
+    font-size: 1rem;
+    background: transparent;
+    color: $text-color;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 2px solid white;
+    border-radius: 25px;
+    display: inline-block;
+    float: none;
+    padding: 0.4em 1.2em;
+    margin: 5px;
+
+    &:hover {
+      color: #000000;
+    }
+
+  }
+}
+
+.about {
+  margin-top: 80px;
+  padding-bottom: 30px;
+
+  h1 {
+    font-family: $primary-font;
+    font-size: 2rem;
+    color: $background-color;
+    font-weight: 600;
+  }
+
+  .me-img {
+    height: auto;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+      width: 25%;
+    }
+  }
+
+  .me-h2 {
+    font-family: $primary-font;
+    color: #009999;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    &:hover {
+      font-size: 1.6rem;
+    }
+  }
+
+  .me-para {
+    font-family: $primary-font;
+    font-size: 1.2rem;
+    color: #000000;
+    letter-spacing: 2px;
+  }
+}

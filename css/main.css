@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Playfair+Display:400,500,600,700,800,900|Poppins:300,400,500,600,700,800,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: border-box;
+          box-shadow: border-box;
+  /* font-family: 'Playfair Display', serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif; */
+}
+
+.container {
+  background-color: #7510f7;
+}
+
+.menu {
+  background-color: #7510f7;
+}
+
+.menu div {
+  overflow: hidden;
+  position: relative;
+}
+
+.menu div nav {
+  background-color: #7510f7;
+  display: none;
+}
+
+.menu div a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 14px 16px;
+}
+
+.menu div a:hover {
+  color: #000000;
+}
+
+.menu div .icon {
+  background: #7510f7;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu div #logo {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.menu img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.content {
+  text-align: center;
+  background-color: #7510f7;
+  height: 15vh;
+}
+
+.hero {
+  text-align: center;
+  background-color: #7510f7;
+  height: 15vh;
+}
+
+.hero a {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 6vw;
+  text-decoration: none;
+  letter-spacing: 0.08rem;
+}
+
+.hero button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background: transparent;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1px;
+  border: 2px solid white;
+  border-radius: 25px;
+  display: inline-block;
+  float: none;
+  padding: 0.4em 1.2em;
+  margin: 5px;
+}
+
+.hero button:hover {
+  color: #000000;
+}
+
+.about {
+  margin-top: 80px;
+  padding-bottom: 30px;
+}
+
+.about h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #7510f7;
+  font-weight: 600;
+}
+
+.about .me-img {
+  height: auto;
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about .me-img:hover {
+  width: 25%;
+}
+
+.about .me-h2 {
+  font-family: "Poppins", sans-serif;
+  color: #009999;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.about .me-h2:hover {
+  font-size: 1.6rem;
+}
+
+.about .me-para {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #000000;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=main.css.map */
