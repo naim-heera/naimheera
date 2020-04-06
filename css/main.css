@@ -325,6 +325,8 @@ body {
 
 .education {
   height: 70vh;
+  width: 100%;
+  display: none;
 }
 
 .education .title {
@@ -344,52 +346,59 @@ body {
 
 .contact {
   background: #7510f7;
-  height: 190vh;
+  height: 181vh;
   position: relative;
+  margin-top: 5em;
 }
 
 .contact .hire-me {
   background-color: #141c3a;
   -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
           box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
-  height: 40vh;
+  height: 37vh;
   width: 90vw;
   position: absolute;
-  margin-top: -4rem;
-  margin-left: 1rem;
-  border-radius: 12px;
+  margin: -4em 0 0 1em;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
 }
 
-.contact h1 {
+.contact .title2 {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
-.contact p {
+.contact .me-para2 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 2px;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
   color: #ffffff;
-  margin-bottom: 50px;
+  margin-bottom: 1.5em;
 }
 
-.contact button {
-  border: 2px solid #7510f7;
-  padding: 1.25em 2em;
-  font-weight: 400;
+.contact .button2 {
+  border: 1px solid #7510f7;
+  font-weight: 500;
   background: transparent;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 1.5em;
   background: transparent;
   display: inline-block;
   float: none;
   color: #ffffff;
   text-align: center;
-  padding: 10px 30px;
+  padding: 0.5em 1.5em;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  -ms-border-radius: 1.5em;
+  -o-border-radius: 1.5em;
 }
 
 .contact:hover {
@@ -398,21 +407,20 @@ body {
 
 .contact .contact-title {
   font-family: "Poppins", sans-serif;
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: #ffffff;
-  font-weight: 600;
-  letter-spacing: 2px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   position: absolute;
-  margin-top: 360px;
-  margin-left: 100px;
+  margin: 11em auto auto 1.4em;
 }
 
 .contact-form {
   width: 90vw;
   background-color: "Poppins", sans-serif;
-  padding: 20px;
+  padding: 1em;
   position: absolute;
-  margin-top: 400px;
+  margin-top: 18em;
 }
 
 .contact-form #name,
@@ -425,65 +433,65 @@ body {
 
 .contact-form input::-webkit-input-placeholder {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
   color: #ffffff;
 }
 
 .contact-form input:-ms-input-placeholder {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
   color: #ffffff;
 }
 
 .contact-form input::-ms-input-placeholder {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
   color: #ffffff;
 }
 
 .contact-form input::placeholder {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
   color: #ffffff;
 }
 
 .contact-form textarea::-webkit-input-placeholder {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
   color: #ffffff;
 }
 
 .contact-form textarea:-ms-input-placeholder {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
   color: #ffffff;
 }
 
 .contact-form textarea::-ms-input-placeholder {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
   color: #ffffff;
 }
 
 .contact-form textarea::placeholder {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
   color: #ffffff;
 }
 
@@ -491,31 +499,39 @@ body {
 .contact-form input[type=email],
 .contact-form textarea {
   width: 100%;
-  padding: 20px;
+  padding: 1em;
   border: 1px solid #009999;
-  border-radius: 7px;
+  border-radius: 0.4em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  -ms-border-radius: 0.4em;
+  -o-border-radius: 0.4em;
 }
 
 .contact-form textarea {
-  height: 200px;
+  height: 8em;
 }
 
 .contact-form input[type=submit] {
   background: transparent;
   color: #ffffff;
-  padding: 10px 20px;
-  border: 2px solid #4CAF50;
+  padding: 0.3em 0.7em;
+  border: 3px solid #4CAF50;
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
   color: #ffffff;
-  border-radius: 7px;
+  border-radius: 0.4em;
   cursor: pointer;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  -ms-border-radius: 0.4em;
+  -o-border-radius: 0.4em;
 }
 
 .contact-form input[type=submit]:hover {
@@ -524,11 +540,11 @@ body {
 
 .contact-form #contact-info {
   font-family: "Poppins", sans-serif;
-  font-size: 1.8em;
+  font-size: 1.4em;
   color: #ffffff;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-top: 60px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-top: 3em;
 }
 
 .contact-form .info-title {
@@ -536,33 +552,32 @@ body {
   font-size: 1.2em;
   color: #ffffff;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
   text-decoration: underline;
 }
 
 .contact-form .contact-detail {
   font-family: "Poppins", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.2em;
   color: #ffffff;
   font-weight: 500;
-  letter-spacing: 1px;
 }
 
 .contact-form #copyright {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #ffffff;
-  font-weight: 400;
-  letter-spacing: 2px;
+  font-weight: 200;
+  letter-spacing: 0.1em;
 }
 
 .contact-form .media-icon {
-  margin-right: 15px;
+  margin-right: 1em;
   cursor: pointer;
 }
 
 .contact-form .media-icon:hover {
-  height: 50px;
-  width: 50px;
+  height: 3em;
+  width: 3em;
 }
 /*# sourceMappingURL=main.css.map */
