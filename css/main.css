@@ -14,31 +14,32 @@ body {
   background-color: #7510f7;
 }
 
-.menu div {
+.menu .topnav {
   overflow: hidden;
   position: relative;
 }
 
-.menu div nav {
+.menu .topnav #mylinks {
   background-color: #7510f7;
   display: none;
 }
 
-.menu div a {
+.menu .topnav a {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
   color: #ffffff;
   text-decoration: none;
   text-align: center;
   display: block;
-  padding: 14px 16px;
+  padding: 0.8em 0.9em;
 }
 
-.menu div a:hover {
+.menu .topnav a:hover {
   color: #000000;
 }
 
-.menu div .icon {
+.menu .topnav .icon {
   background: #7510f7;
   display: block;
   position: absolute;
@@ -46,18 +47,20 @@ body {
   top: 0;
 }
 
-.menu div #logo {
+.menu .topnav #logo {
   color: #ffffff;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 600;
+  margin-top: -0.4em;
   text-align: left;
 }
 
-.menu img {
+.menu #profile-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
+  width: 170px;
 }
 
 .content {
@@ -72,28 +75,28 @@ body {
   height: 15vh;
 }
 
-.hero a {
+.hero .typewrite {
   color: #ffffff;
   font-family: "Playfair Display", serif;
   font-size: 6vw;
   text-decoration: none;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.08em;
 }
 
 .hero button {
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 0.7rem;
   background: transparent;
   color: #ffffff;
   font-weight: 400;
   text-align: center;
-  letter-spacing: 1px;
-  border: 2px solid white;
+  letter-spacing: 0.08em;
+  border: 1px solid #ffffff;
   border-radius: 25px;
   display: inline-block;
   float: none;
   padding: 0.4em 1.2em;
-  margin: 5px;
+  margin: 0.4em;
 }
 
 .hero button:hover {
@@ -101,13 +104,12 @@ body {
 }
 
 .about {
-  margin-top: 80px;
-  padding-bottom: 30px;
+  margin-top: 2em;
 }
 
 .about .title {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #7510f7;
   font-weight: 600;
 }
@@ -118,6 +120,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -1em;
 }
 
 .about .me-img:hover {
@@ -127,9 +130,10 @@ body {
 .about .me-h2 {
   font-family: "Poppins", sans-serif;
   color: #009999;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
+  margin-bottom: -1em;
 }
 
 .about .me-h2:hover {
@@ -138,14 +142,15 @@ body {
 
 .about .me-para {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1em;
   color: #000000;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
+  padding-bottom: 1em;
 }
 
 .roadmap .title {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #7510f7;
   font-weight: 600;
 }
@@ -154,31 +159,42 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   color: #666666;
-  margin-bottom: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .roadmap img {
-  margin-bottom: 30px;
-  width: 120px;
+  margin: 0.5em;
+  width: 3em;
 }
 
 .progressbar .title {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #7510f7;
   font-weight: 600;
 }
 
 .progressbar .skill-progress {
-  margin-bottom: 10px;
+  margin-bottom: 0.6em;
 }
 
 .progressbar .progress {
-  background-color: #f2f2f2;
-  border-radius: 20px;
-  height: 25px;
-  width: 450px;
-  margin: 20px auto;
+  background-color: #e6e6e6;
+  border-radius: 1.5em;
+  height: 1.2em;
+  width: 18em;
+  margin: 1.2em auto;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  -ms-border-radius: 1.5em;
+  -o-border-radius: 1.5em;
 }
 
 .progressbar .progress-done {
@@ -186,7 +202,7 @@ body {
   background: linear-gradient(to right, #ff0844 0%, #ffb199 100%);
   -webkit-box-shadow: 0 3px 3px -5px #ff0844, 0 2px 5px #ffb199;
           box-shadow: 0 3px 3px -5px #ff0844, 0 2px 5px #ffb199;
-  border-radius: 20px;
+  border-radius: 1.5em;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
@@ -203,8 +219,15 @@ body {
   height: 100%;
   width: 0;
   opacity: 0;
-  -webkit-transition: 4s ease 0.3s;
   transition: 4s ease 0.3s;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  -ms-border-radius: 1.5em;
+  -o-border-radius: 1.5em;
+  -webkit-transition: 4s ease 0.3s;
+  -moz-transition: 4s ease 0.3s;
+  -ms-transition: 4s ease 0.3s;
+  -o-transition: 4s ease 0.3s;
 }
 
 .progressbar .progress-done1 {
@@ -243,61 +266,80 @@ body {
 }
 
 .portfolio {
-  margin-top: 50px;
+  margin-top: 3em;
 }
 
 .portfolio .title {
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #7510f7;
   font-weight: 600;
 }
 
 .portfolio .portfolio-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
   color: #666666;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 0.5em;
 }
 
-.portfolio img {
+.portfolio .port-img {
   width: 90%;
   height: auto;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
 }
 
-.portfolio button {
+.portfolio .port-button {
   background: transparent;
-  border: 2px solid #7510f7;
-  border-radius: 5px;
+  border: 1px solid #7510f7;
+  border-radius: 0.3em;
   display: inline-block;
   float: none;
   text-align: center;
-  padding: 6px;
-  font-size: 1.4em;
-  font-weight: bold;
+  padding: 0.3em;
+  font-size: 1.2em;
+  font-weight: 600;
   color: #7510f7;
   font-family: "Poppins", sans-serif;
-  letter-spacing: 1px;
-  margin: 5px;
+  letter-spacing: 0.1em;
+  margin: 0.4em 0.01em 0 0.2em;
 }
 
-.portfolio button:hover {
+.portfolio .port-button:hover {
   background: #8c39f9;
   color: #ffffff;
 }
 
-.portfolio p {
+.portfolio .me-para {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1em;
   color: #000000;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
+  padding-bottom: 1em;
+}
+
+.education {
+  height: 70vh;
+}
+
+.education .title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: #7510f7;
+  font-weight: 600;
+}
+
+.education .certificate {
+  width: 100%;
 }
 
 .education embed {
-  height: 399px;
-  width: 283px;
-  margin-bottom: 200px;
+  width: 90%;
 }
 
 .contact {
