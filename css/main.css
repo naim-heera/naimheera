@@ -37,6 +37,7 @@ body {
 
 .menu .topnav a:hover {
   color: #000000;
+  text-decoration: underline;
 }
 
 .menu .topnav .icon {
@@ -97,10 +98,10 @@ body {
   float: none;
   padding: 0.4em 1.2em;
   margin: 0.4em;
-}
-
-.hero button:hover {
-  color: #000000;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 .about {
@@ -112,6 +113,12 @@ body {
   font-size: 1.5rem;
   color: #7510f7;
   font-weight: 600;
+}
+
+@media screen and (min-width: 480px) {
+  .about .title {
+    font-size: 1.7rem;
+  }
 }
 
 .about .me-img {
@@ -136,6 +143,12 @@ body {
   margin-bottom: -1em;
 }
 
+@media screen and (min-width: 480px) {
+  .about .me-h2 {
+    margin-bottom: -0.5em;
+  }
+}
+
 .about .me-h2:hover {
   font-size: 1.6rem;
 }
@@ -156,9 +169,6 @@ body {
 }
 
 .roadmap .skills {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  color: #666666;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,16 +195,27 @@ body {
   margin-bottom: 0.6em;
 }
 
+.progressbar .skill-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #666666;
+  font-weight: 600;
+}
+
 .progressbar .progress {
   background-color: #e6e6e6;
   border-radius: 1.5em;
   height: 1.2em;
   width: 18em;
   margin: 1.2em auto;
-  -webkit-border-radius: 1.5em;
-  -moz-border-radius: 1.5em;
-  -ms-border-radius: 1.5em;
-  -o-border-radius: 1.5em;
+}
+
+@media screen and (min-width: 480px) {
+  .progressbar .progress {
+    height: 1.2em;
+    width: 27em;
+    margin: 0 auto;
+  }
 }
 
 .progressbar .progress-done {
@@ -219,15 +240,8 @@ body {
   height: 100%;
   width: 0;
   opacity: 0;
-  transition: 4s ease 0.3s;
-  -webkit-border-radius: 1.5em;
-  -moz-border-radius: 1.5em;
-  -ms-border-radius: 1.5em;
-  -o-border-radius: 1.5em;
   -webkit-transition: 4s ease 0.3s;
-  -moz-transition: 4s ease 0.3s;
-  -ms-transition: 4s ease 0.3s;
-  -o-transition: 4s ease 0.3s;
+  transition: 4s ease 0.3s;
 }
 
 .progressbar .progress-done1 {
@@ -288,10 +302,6 @@ body {
   width: 90%;
   height: auto;
   border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  -ms-border-radius: 0.5em;
-  -o-border-radius: 0.5em;
 }
 
 .portfolio .port-button {
@@ -360,10 +370,6 @@ body {
   position: absolute;
   margin: -4em 0 0 1em;
   border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  -ms-border-radius: 0.5em;
-  -o-border-radius: 0.5em;
 }
 
 .contact .title2 {
@@ -395,10 +401,6 @@ body {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.1em;
-  -webkit-border-radius: 1.5em;
-  -moz-border-radius: 1.5em;
-  -ms-border-radius: 1.5em;
-  -o-border-radius: 1.5em;
 }
 
 .contact:hover {
@@ -506,10 +508,6 @@ body {
           box-sizing: border-box;
   margin-top: 0.2em;
   margin-bottom: 1em;
-  -webkit-border-radius: 0.4em;
-  -moz-border-radius: 0.4em;
-  -ms-border-radius: 0.4em;
-  -o-border-radius: 0.4em;
 }
 
 .contact-form textarea {
@@ -528,10 +526,6 @@ body {
   color: #ffffff;
   border-radius: 0.4em;
   cursor: pointer;
-  -webkit-border-radius: 0.4em;
-  -moz-border-radius: 0.4em;
-  -ms-border-radius: 0.4em;
-  -o-border-radius: 0.4em;
 }
 
 .contact-form input[type=submit]:hover {
