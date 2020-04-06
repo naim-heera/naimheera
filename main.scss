@@ -6,26 +6,20 @@ $secondary-font:'Playfair Display',
 serif;
 $background-color: #7510f7;
 $text-color : #ffffff;
-
+$secondary-color: #009999;
 
 body {
   margin: 0;
   padding: 0;
   box-shadow: border-box;
-  /* font-family: 'Playfair Display', serif;
-  font-family: 'Lato', sans-serif;
-  font-family: 'Poppins', sans-serif; */
 }
 
 .container {
   background-color: $background-color;
-
 }
 
 .menu {
   background-color: $background-color;
-
-
 
   div {
     overflow: hidden;
@@ -86,7 +80,6 @@ body {
   background-color: $background-color;
   height: 15vh;
 
-
   a {
     color: #ffffff;
     font-family: $secondary-font;
@@ -142,7 +135,7 @@ body {
 
   .me-h2 {
     font-family: $primary-font;
-    color: #009999;
+    color: $secondary-color;
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -161,6 +154,7 @@ body {
 }
 
 .roadmap {
+
   .title {
     font-family: $primary-font;
     font-size: 2rem;
@@ -182,6 +176,7 @@ body {
 }
 
 .progressbar {
+
   .title {
     font-family: $primary-font;
     font-size: 2rem;
@@ -199,10 +194,6 @@ body {
     height: 25px;
     width: 450px;
     margin: 20px auto;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
   }
 
   .progress-done {
@@ -220,14 +211,6 @@ body {
     width: 0;
     opacity: 0;
     transition: 4s ease 0.3s;
-    -webkit-transition: 4s ease 0.3s;
-    -moz-transition: 4s ease 0.3s;
-    -ms-transition: 4s ease 0.3s;
-    -o-transition: 4s ease 0.3s;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
   }
 
   .progress-done1 {
@@ -318,7 +301,7 @@ body {
 
 .contact {
   background: $background-color;
-  height: 170vh;
+  height: 190vh;
   position: relative;
 
   .hire-me {
@@ -330,7 +313,6 @@ body {
     margin-top: -4rem;
     margin-left: 1rem;
     border-radius: 12px;
-
   }
 
   h1 {
@@ -363,10 +345,134 @@ body {
     font-size: 1rem;
     font-family: $primary-font;
     letter-spacing: 1px;
-
   }
 
   &:hover {
     background-color: $background-color;
+  }
+
+  .contact-title {
+    font-family: $primary-font;
+    font-size: 1.8em;
+    color: $text-color;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 100px;
+  }
+}
+
+.contact-form {
+
+  width: 90vw;
+  background-color: $primary-font;
+  padding: 20px;
+  position: absolute;
+  margin-top: 400px;
+
+  #name,
+  #cname,
+  #email,
+  #ptitle,
+  #subject {
+    background: transparent;
+  }
+
+  input::placeholder {
+    font-family: $primary-font;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: $text-color;
+  }
+
+  textarea::placeholder {
+    font-family: $primary-font;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: $text-color;
+  }
+
+  input[type=text],
+  input[type=email],
+  textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid $secondary-color;
+    border-radius: 7px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  input[type=submit] {
+
+    background: transparent;
+    color: $text-color;
+    padding: 10px 20px;
+    border: 2px solid #4CAF50;
+    font-family: $primary-font;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: $text-color;
+    border-radius: 7px;
+    cursor: pointer;
+
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  #contact-info {
+    font-family: $primary-font;
+    font-size: 1.8em;
+    color: $text-color;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 60px;
+  }
+
+  .info-title {
+    font-family: $primary-font;
+    font-size: 1.2em;
+    color: $text-color;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-decoration: underline;
+  }
+
+  .contact-detail {
+    font-family: $primary-font;
+    font-size: 1.6em;
+    color: $text-color;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  #copyright {
+    font-family: $primary-font;
+    font-size: 1.2em;
+    color: $text-color;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .media-icon {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  .media-icon:hover {
+    height: 50px;
+    width: 50px;
+
   }
 }

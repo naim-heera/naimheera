@@ -4,9 +4,6 @@ body {
   padding: 0;
   -webkit-box-shadow: border-box;
           box-shadow: border-box;
-  /* font-family: 'Playfair Display', serif;
-  font-family: 'Lato', sans-serif;
-  font-family: 'Poppins', sans-serif; */
 }
 
 .container {
@@ -182,10 +179,6 @@ body {
   height: 25px;
   width: 450px;
   margin: 20px auto;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
 }
 
 .progressbar .progress-done {
@@ -210,15 +203,8 @@ body {
   height: 100%;
   width: 0;
   opacity: 0;
-  transition: 4s ease 0.3s;
   -webkit-transition: 4s ease 0.3s;
-  -moz-transition: 4s ease 0.3s;
-  -ms-transition: 4s ease 0.3s;
-  -o-transition: 4s ease 0.3s;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  transition: 4s ease 0.3s;
 }
 
 .progressbar .progress-done1 {
@@ -316,7 +302,7 @@ body {
 
 .contact {
   background: #7510f7;
-  height: 170vh;
+  height: 190vh;
   position: relative;
 }
 
@@ -366,5 +352,175 @@ body {
 
 .contact:hover {
   background-color: #7510f7;
+}
+
+.contact .contact-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8em;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: absolute;
+  margin-top: 360px;
+  margin-left: 100px;
+}
+
+.contact-form {
+  width: 90vw;
+  background-color: "Poppins", sans-serif;
+  padding: 20px;
+  position: absolute;
+  margin-top: 400px;
+}
+
+.contact-form #name,
+.contact-form #cname,
+.contact-form #email,
+.contact-form #ptitle,
+.contact-form #subject {
+  background: transparent;
+}
+
+.contact-form input::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.contact-form input:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.contact-form input::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.contact-form input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.contact-form textarea::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.contact-form textarea:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.contact-form textarea::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.contact-form textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #009999;
+  border-radius: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.contact-form textarea {
+  height: 200px;
+}
+
+.contact-form input[type=submit] {
+  background: transparent;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 2px solid #4CAF50;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.contact-form input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact-form #contact-info {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8em;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-top: 60px;
+}
+
+.contact-form .info-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
+.contact-form .contact-detail {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6em;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.contact-form #copyright {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.contact-form .media-icon {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.contact-form .media-icon:hover {
+  height: 50px;
+  width: 50px;
 }
 /*# sourceMappingURL=main.css.map */
