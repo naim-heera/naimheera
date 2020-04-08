@@ -334,10 +334,16 @@ body {
 }
 
 .education {
-
+  // certificate is not working in 320px and 480px
   height: 70vh;
   width: 100%;
   display: none;
+
+  // @include mq(480px) {
+  //   height: 70vh;
+  //   width: 100%;
+  //   display: block;
+  // }
 
   .title {
     @include title;
@@ -345,12 +351,11 @@ body {
 
   .certificate {
     width: 100%;
-
   }
 
   embed {
-
-    width: 90%;
+    width: 600px;
+    height: 600px;
 
   }
 }
@@ -367,9 +372,12 @@ body {
     height: 37vh;
     width: 90vw;
     position: absolute;
-    margin: -4em 0 0 1em;
+    margin: -4em 0 0 1.45em;
     border-radius: 0.5em;
-
+    // -webkit-border-radius: 0.5em;
+    // -moz-border-radius: 0.5em;
+    // -ms-border-radius: 0.5em;
+    // -o-border-radius: 0.5em;
   }
 
   .title2 {
@@ -401,7 +409,10 @@ body {
     font-size: 1rem;
     font-family: $primary-font;
     letter-spacing: 0.1em;
-
+    // -webkit-border-radius: ;
+    // -moz-border-radius: ;
+    // -ms-border-radius: ;
+    // -o-border-radius: ;
   }
 
   &:hover {
@@ -454,6 +465,10 @@ body {
     box-sizing: border-box;
     margin-top: 0.2em;
     margin-bottom: 1em;
+    // -webkit-border-radius: ;
+    // -moz-border-radius: ;
+    // -ms-border-radius: ;
+    // -o-border-radius: ;
   }
 
   textarea {
@@ -472,6 +487,10 @@ body {
     color: $text-color;
     border-radius: 0.4em;
     cursor: pointer;
+    // -webkit-border-radius: ;
+    // -moz-border-radius: ;
+    // -ms-border-radius: ;
+    // -o-border-radius: ;
   }
 
   input[type=submit]:hover {
