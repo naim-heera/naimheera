@@ -51,6 +51,8 @@ body {
 .menu {
   background-color: $background-color;
 
+  @include mq(768px) {}
+
   .topnav {
     overflow: hidden;
     position: relative;
@@ -100,6 +102,10 @@ body {
     margin-right: auto;
     margin-top: 5%;
     width: 170px;
+
+    @include mq(768px) {
+      width: 180px;
+    }
   }
 }
 
@@ -112,36 +118,54 @@ body {
 .hero {
   text-align: center;
   background-color: $background-color;
-  height: 15vh;
+  height: 17vh;
 
   .typewrite {
     color: $text-color;
     font-family: $secondary-font;
-    font-size: 6vw;
+    font-size: 0.8em;
     text-decoration: none;
     letter-spacing: 0.08em;
-  }
 
-  button {
-    font-family: $primary-font;
-    font-size: 0.7rem;
-    background: transparent;
-    color: $text-color;
-    font-weight: 400;
-    text-align: center;
-    letter-spacing: 0.08em;
-    border: 1px solid $text-color;
-    border-radius: 25px;
-    display: inline-block;
-    float: none;
-    padding: 0.4em 1.2em;
-    margin: 0.4em;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
+    @include mq(480px) {
+      font-size: 1em;
+    }
+
+    @include mq(768px) {
+      font-size: 1.3em;
+    }
   }
 }
+
+button {
+  font-family: $primary-font;
+  font-size: 0.7rem;
+  background: transparent;
+  color: $text-color;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.08em;
+  border: 1px solid $text-color;
+  border-radius: 25px;
+  display: inline-block;
+  float: none;
+  padding: 0.4em 1.2em;
+  margin: 0.4em;
+
+  @include mq(768px) {
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    padding: 0.5em 1.3em;
+    margin: 0em 0.7em 0 0.7em;
+  }
+
+  // -webkit-border-radius: 25px;
+  // -moz-border-radius: 25px;
+  // -ms-border-radius: 25px;
+  // -o-border-radius: 25px;
+}
+
 
 .about {
   margin-top: 2em;
@@ -153,6 +177,11 @@ body {
     @include mq(480px) {
       font-size: 1.7rem;
     }
+
+    @include mq(768px) {
+      font-size: 1.9rem;
+    }
+
   }
 
   .me-img {
@@ -180,6 +209,12 @@ body {
       margin-bottom: -0.5em;
     }
 
+    @include mq(768px) {
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+    }
+
     &:hover {
       font-size: 1.6rem;
     }
@@ -188,6 +223,11 @@ body {
   .me-para {
     @include paragraph;
   }
+
+  @include mq(768px) {
+    font-size: 1.2em;
+  }
+
 }
 
 .roadmap {
@@ -195,6 +235,9 @@ body {
   .title {
     @include title;
 
+    @include mq(768px) {
+      font-size: 1.9rem;
+    }
   }
 
   .skills {
@@ -207,6 +250,11 @@ body {
   img {
     margin: 0.5em;
     width: 3em;
+
+    @include mq(768px) {
+      margin: 0.5em;
+      width: 5em;
+    }
   }
 }
 
@@ -214,6 +262,10 @@ body {
 
   .title {
     @include title;
+
+    @include mq(768px) {
+      font-size: 1.9rem;
+    }
   }
 
   .skill-progress {
@@ -222,9 +274,19 @@ body {
 
   .skill-title {
     font-family: $primary-font;
-    font-size: 1rem;
+    font-size: 0.8em;
     color: #666666;
     font-weight: 600;
+    margin-bottom: -1em;
+
+    @include mq(480px) {
+      font-size: 0.9em;
+      margin-bottom: -0.01em;
+    }
+
+    @include mq(768px) {
+      margin-bottom: -0.01em;
+    }
   }
 
   .progress {
@@ -234,9 +296,20 @@ body {
     width: 18em;
     margin: 1.2em auto;
 
-    @include mq(480px) {
+    @include mq(480px) // -webkit-border-radius: 1.5em;
+
+    // -moz-border-radius: 1.5em;
+    // -ms-border-radius: 1.5em;
+    // -o-border-radius: 1.5em;
+      {
       height: 1.2em;
       width: 27em;
+      margin: 0 auto;
+    }
+
+    @include mq(768px) {
+      height: 1.3em;
+      width: 40em;
       margin: 0 auto;
     }
 
@@ -291,6 +364,10 @@ body {
 
   .title {
     @include title;
+
+    @include mq(768px) {
+      font-size: 1.9rem;
+    }
   }
 
   .portfolio-title {
@@ -299,12 +376,24 @@ body {
     color: #666666;
     font-weight: bold;
     margin-bottom: 0.5em;
+
+    @include mq(768px) {
+      font-size: 1.3rem;
+    }
   }
 
   .port-img {
     width: 90%;
     height: auto;
     border-radius: 0.5em;
+    //-webkit-border-radius: 0.5em;
+    //-moz-border-radius: 0.5em;
+    //-ms-border-radius: 0.5em;
+    //-o-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
   }
 
   .port-button {
@@ -322,7 +411,12 @@ body {
     letter-spacing: 0.1em;
     margin: 0.4em 0.01em 0 0.2em;
 
-    &:hover {
+    &:hover // -webkit-border-radius: 0.3em;
+    // -moz-border-radius: 0.3em;
+    // -ms-border-radius: 0.3em;
+    // -o-border-radius: 0.3em;
+
+      {
       background: #8c39f9;
       color: $text-color;
     }
@@ -330,6 +424,10 @@ body {
 
   .me-para {
     @include paragraph;
+
+    @include mq(768px) {
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -345,6 +443,7 @@ body {
   //   display: block;
   // }
 
+
   .title {
     @include title;
   }
@@ -356,7 +455,6 @@ body {
   embed {
     width: 600px;
     height: 600px;
-
   }
 }
 
@@ -372,18 +470,31 @@ body {
     height: 37vh;
     width: 90vw;
     position: absolute;
-    margin: -4em 0 0 1.45em;
+    margin: -4em 0 0 1em;
     border-radius: 0.5em;
-    // -webkit-border-radius: 0.5em;
-    // -moz-border-radius: 0.5em;
-    // -ms-border-radius: 0.5em;
-    // -o-border-radius: 0.5em;
+
+    //-webkit-border-radius: 0.5em;
+    //-moz-border-radius: 0.5em;
+    //-ms-border-radius: 0.5em;
+    //-o-border-radius: 0.5em;
+    @include mq(480px) {
+      margin: -4em 0 0 1.45em;
+    }
+
+    @include mq(768px) {
+      margin: -4em 0 0 2.45em;
+    }
+
   }
 
   .title2 {
     color: $text-color;
     font-family: $primary-font;
     font-size: 1.6rem;
+
+    @include mq(768px) {
+      font-size: 1.8rem;
+    }
   }
 
   .me-para2 {
@@ -392,6 +503,12 @@ body {
     letter-spacing: 0.2em;
     color: $text-color;
     margin-bottom: 1.5em;
+
+    @include mq(768px) {
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.7em;
+    }
   }
 
   .button2 {
@@ -409,10 +526,14 @@ body {
     font-size: 1rem;
     font-family: $primary-font;
     letter-spacing: 0.1em;
-    // -webkit-border-radius: ;
-    // -moz-border-radius: ;
-    // -ms-border-radius: ;
-    // -o-border-radius: ;
+    //-webkit-border-radius: ;
+    //-moz-border-radius: ;
+    //-ms-border-radius: ;
+    //-o-border-radius: ;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
   }
 
   &:hover {
@@ -421,23 +542,57 @@ body {
 
   .contact-title {
     font-family: $primary-font;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: $text-color;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.1em;
     position: absolute;
-    margin: 11em auto auto 1.4em;
+    margin: 13em auto auto 2.4em;
+
+    @include mq(480px) {
+      font-size: 1.5em;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      position: absolute;
+      margin: 11em auto auto 5em;
+
+    }
+
+
+    @include mq(768px) {
+      font-size: 1.6em;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      position: absolute;
+      margin: 11em auto auto 9.5em;
+    }
 
   }
 }
 
 .contact-form {
 
-  width: 90vw;
+  width: 95vw;
   background-color: $primary-font;
   padding: 1em;
   position: absolute;
-  margin-top: 18em;
+  margin-top: 19em;
+
+  @include mq(480px) {
+    width: 70vw;
+    padding: 1em;
+    position: absolute;
+    margin: 19em auto auto 3.5em;
+
+  }
+
+  @include mq(768px) {
+    width: 70vw;
+    padding: 1.1em;
+    position: absolute;
+    margin: 20em auto auto 6em;
+
+  }
 
   #name,
   #cname,
@@ -479,7 +634,7 @@ body {
     background: transparent;
     color: $text-color;
     padding: 0.3em 0.7em;
-    border: 3px solid #4CAF50;
+    border: 2px solid #4CAF50;
     font-family: $primary-font;
     font-size: 1.2em;
     font-weight: 400;
@@ -499,7 +654,7 @@ body {
 
   #contact-info {
     font-family: $primary-font;
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: $text-color;
     font-weight: 500;
     letter-spacing: 0.1em;
@@ -508,7 +663,7 @@ body {
 
   .info-title {
     font-family: $primary-font;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: $text-color;
     font-weight: 400;
     letter-spacing: 0.1em;
@@ -517,7 +672,7 @@ body {
 
   .contact-detail {
     font-family: $primary-font;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: $text-color;
     font-weight: 500;
 

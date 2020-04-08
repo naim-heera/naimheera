@@ -64,6 +64,12 @@ body {
   width: 170px;
 }
 
+@media screen and (min-width: 768px) {
+  .menu #profile-img {
+    width: 180px;
+  }
+}
+
 .content {
   text-align: center;
   background-color: #7510f7;
@@ -73,18 +79,30 @@ body {
 .hero {
   text-align: center;
   background-color: #7510f7;
-  height: 15vh;
+  height: 17vh;
 }
 
 .hero .typewrite {
   color: #ffffff;
   font-family: "Playfair Display", serif;
-  font-size: 6vw;
+  font-size: 0.8em;
   text-decoration: none;
   letter-spacing: 0.08em;
 }
 
-.hero button {
+@media screen and (min-width: 480px) {
+  .hero .typewrite {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero .typewrite {
+    font-size: 1.3em;
+  }
+}
+
+button {
   font-family: "Poppins", sans-serif;
   font-size: 0.7rem;
   background: transparent;
@@ -98,10 +116,16 @@ body {
   float: none;
   padding: 0.4em 1.2em;
   margin: 0.4em;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  button {
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    padding: 0.5em 1.3em;
+    margin: 0em 0.7em 0 0.7em;
+  }
 }
 
 .about {
@@ -118,6 +142,12 @@ body {
 @media screen and (min-width: 480px) {
   .about .title {
     font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about .title {
+    font-size: 1.9rem;
   }
 }
 
@@ -149,6 +179,14 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .about .me-h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+  }
+}
+
 .about .me-h2:hover {
   font-size: 1.6rem;
 }
@@ -161,11 +199,23 @@ body {
   padding-bottom: 1em;
 }
 
+@media screen and (min-width: 768px) {
+  .about {
+    font-size: 1.2em;
+  }
+}
+
 .roadmap .title {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   color: #7510f7;
   font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .roadmap .title {
+    font-size: 1.9rem;
+  }
 }
 
 .roadmap .skills {
@@ -184,11 +234,24 @@ body {
   width: 3em;
 }
 
+@media screen and (min-width: 768px) {
+  .roadmap img {
+    margin: 0.5em;
+    width: 5em;
+  }
+}
+
 .progressbar .title {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   color: #7510f7;
   font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .progressbar .title {
+    font-size: 1.9rem;
+  }
 }
 
 .progressbar .skill-progress {
@@ -197,9 +260,23 @@ body {
 
 .progressbar .skill-title {
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8em;
   color: #666666;
   font-weight: 600;
+  margin-bottom: -1em;
+}
+
+@media screen and (min-width: 480px) {
+  .progressbar .skill-title {
+    font-size: 0.9em;
+    margin-bottom: -0.01em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .progressbar .skill-title {
+    margin-bottom: -0.01em;
+  }
 }
 
 .progressbar .progress {
@@ -214,6 +291,14 @@ body {
   .progressbar .progress {
     height: 1.2em;
     width: 27em;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .progressbar .progress {
+    height: 1.3em;
+    width: 40em;
     margin: 0 auto;
   }
 }
@@ -290,6 +375,12 @@ body {
   font-weight: 600;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio .title {
+    font-size: 1.9rem;
+  }
+}
+
 .portfolio .portfolio-title {
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
@@ -298,10 +389,20 @@ body {
   margin-bottom: 0.5em;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio .portfolio-title {
+    font-size: 1.3rem;
+  }
+}
+
 .portfolio .port-img {
   width: 90%;
   height: auto;
   border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
 }
 
 .portfolio .port-button {
@@ -331,6 +432,12 @@ body {
   color: #000000;
   letter-spacing: 0.1em;
   padding-bottom: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio .me-para {
+    font-size: 1.2rem;
+  }
 }
 
 .education {
@@ -369,8 +476,20 @@ body {
   height: 37vh;
   width: 90vw;
   position: absolute;
-  margin: -4em 0 0 1.45em;
+  margin: -4em 0 0 1em;
   border-radius: 0.5em;
+}
+
+@media screen and (min-width: 480px) {
+  .contact .hire-me {
+    margin: -4em 0 0 1.45em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact .hire-me {
+    margin: -4em 0 0 2.45em;
+  }
 }
 
 .contact .title2 {
@@ -379,12 +498,26 @@ body {
   font-size: 1.6rem;
 }
 
+@media screen and (min-width: 768px) {
+  .contact .title2 {
+    font-size: 1.8rem;
+  }
+}
+
 .contact .me-para2 {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.2em;
   color: #ffffff;
   margin-bottom: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .contact .me-para2 {
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.7em;
+  }
 }
 
 .contact .button2 {
@@ -402,6 +535,10 @@ body {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.1em;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  -ms-border-radius: 1.5em;
+  -o-border-radius: 1.5em;
 }
 
 .contact:hover {
@@ -410,20 +547,58 @@ body {
 
 .contact .contact-title {
   font-family: "Poppins", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.1em;
   position: absolute;
-  margin: 11em auto auto 1.4em;
+  margin: 13em auto auto 2.4em;
+}
+
+@media screen and (min-width: 480px) {
+  .contact .contact-title {
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    position: absolute;
+    margin: 11em auto auto 5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact .contact-title {
+    font-size: 1.6em;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    position: absolute;
+    margin: 11em auto auto 9.5em;
+  }
 }
 
 .contact-form {
-  width: 90vw;
+  width: 95vw;
   background-color: "Poppins", sans-serif;
   padding: 1em;
   position: absolute;
-  margin-top: 18em;
+  margin-top: 19em;
+}
+
+@media screen and (min-width: 480px) {
+  .contact-form {
+    width: 70vw;
+    padding: 1em;
+    position: absolute;
+    margin: 19em auto auto 3.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form {
+    width: 70vw;
+    padding: 1.1em;
+    position: absolute;
+    margin: 20em auto auto 6em;
+  }
 }
 
 .contact-form #name,
@@ -519,7 +694,7 @@ body {
   background: transparent;
   color: #ffffff;
   padding: 0.3em 0.7em;
-  border: 3px solid #4CAF50;
+  border: 2px solid #4CAF50;
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
   font-weight: 400;
@@ -535,7 +710,7 @@ body {
 
 .contact-form #contact-info {
   font-family: "Poppins", sans-serif;
-  font-size: 1.4em;
+  font-size: 1.3em;
   color: #ffffff;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -544,7 +719,7 @@ body {
 
 .contact-form .info-title {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #ffffff;
   font-weight: 400;
   letter-spacing: 0.1em;
@@ -553,7 +728,7 @@ body {
 
 .contact-form .contact-detail {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #ffffff;
   font-weight: 500;
 }
