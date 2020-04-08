@@ -46,72 +46,92 @@ body {
 
 .container {
   background-color: $background-color;
+
+  @include mq(1200px) {}
 }
 
 .menu {
   background-color: $background-color;
 
-  @include mq(768px) {}
+  @include mq(1200px) {}
 
   .topnav {
     overflow: hidden;
     position: relative;
 
-    #mylinks {
-      background-color: $background-color;
-      display: none;
-    }
 
-    a {
-      font-family: $primary-font;
-      font-size: 0.8rem;
-      letter-spacing: 0.1em;
-      color: $text-color;
-      text-decoration: none;
-      text-align: center;
-      display: block;
-      padding: 0.8em 0.9em;
-
-      &:hover {
-        color: #000000;
-        text-decoration: underline;
-
-      }
-    }
-
-    .icon {
-      background: $background-color;
-      display: block;
-      position: absolute;
-      right: 0;
+    @include mq(1200px) {
+      height: 100vh;
+      width: 20vw;
+      position: fixed;
+      z-index: 1;
       top: 0;
-    }
+      left: 0;
+      background-color: $background-color;
+      overflow-x: hidden;
 
-    #logo {
-      color: $text-color;
-      font-size: 1rem;
-      font-weight: 600;
-      margin-top: -0.4em;
-      text-align: left;
     }
   }
 
-  #profile-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    width: 170px;
+  #mylinks {
+    background-color: $background-color;
+    display: none;
 
-    @include mq(768px) {
-      width: 180px;
-    }
 
-    @include mq(992px) {
-      width: 200px;
-    }
+  }
+
+}
+
+a {
+  font-family: $primary-font;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: $text-color;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 0.8em 0.9em;
+
+  &:hover {
+    color: #000000;
+    text-decoration: underline;
+
   }
 }
+
+.icon {
+  background: $background-color;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#logo {
+  color: $text-color;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: -0.4em;
+  text-align: left;
+}
+
+
+#profile-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 170px;
+
+  @include mq(768px) {
+    width: 180px;
+  }
+
+  @include mq(992px) {
+    width: 200px;
+  }
+}
+
 
 .content {
   text-align: center;

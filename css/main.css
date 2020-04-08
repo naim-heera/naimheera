@@ -19,12 +19,25 @@ body {
   position: relative;
 }
 
-.menu .topnav #mylinks {
+@media screen and (min-width: 1200px) {
+  .menu .topnav {
+    height: 100vh;
+    width: 20vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #7510f7;
+    overflow-x: hidden;
+  }
+}
+
+.menu #mylinks {
   background-color: #7510f7;
   display: none;
 }
 
-.menu .topnav a {
+a {
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
@@ -35,12 +48,12 @@ body {
   padding: 0.8em 0.9em;
 }
 
-.menu .topnav a:hover {
+a:hover {
   color: #000000;
   text-decoration: underline;
 }
 
-.menu .topnav .icon {
+.icon {
   background: #7510f7;
   display: block;
   position: absolute;
@@ -48,7 +61,7 @@ body {
   top: 0;
 }
 
-.menu .topnav #logo {
+#logo {
   color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
@@ -56,7 +69,7 @@ body {
   text-align: left;
 }
 
-.menu #profile-img {
+#profile-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -65,13 +78,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .menu #profile-img {
+  #profile-img {
     width: 180px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .menu #profile-img {
+  #profile-img {
     width: 200px;
   }
 }
