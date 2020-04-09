@@ -326,6 +326,19 @@ button {
     @include mq(992px) {
       font-size: 2rem;
     }
+
+    @include mq(1200px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  .road-bar {
+    @include mq(1200px) {
+      display: flex;
+      width: 98%;
+    }
+
+
   }
 
   .skills {
@@ -348,6 +361,12 @@ button {
       margin: 0.5em;
       width: 6em;
     }
+
+    @include mq(1200px) {
+      margin: 1.6em 0.4em 0.4em 0.4em;
+      width: 5.5em;
+
+    }
   }
 }
 
@@ -362,6 +381,10 @@ button {
 
     @include mq(992px) {
       font-size: 2rem;
+    }
+
+    @include mq(1200px) {
+      display: none;
     }
   }
 
@@ -398,16 +421,7 @@ button {
     width: 18em;
     margin: 1.2em auto;
 
-    @include mq(480px) //-webkit-border-radius: 1.5em;
-    //-moz-border-radius: 1.5em;
-    //-ms-border-radius: 1.5em;
-    //-o-border-radius: 1.5em;
-    // -webkit-border-radius: ;
-    // -moz-border-radius: ;
-    // -ms-border-radius: ;
-    // -o-border-radius:;
-
-      {
+    @include mq(480px) {
       height: 1.2em;
       width: 27em;
       margin: 0 auto;
@@ -422,6 +436,12 @@ button {
     @include mq(992px) {
       height: 1.4em;
       width: 45em;
+      margin: 0 auto;
+    }
+
+    @include mq(992px) {
+      height: 1.3em;
+      width: 37em;
       margin: 0 auto;
     }
 
@@ -484,6 +504,17 @@ button {
     @include mq(992px) {
       font-size: 2rem;
     }
+
+    @include mq(1200px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  .port-blurb {
+    @include mq(1200px) {
+      display: flex;
+    }
+
   }
 
   .portfolio-title {
@@ -500,6 +531,10 @@ button {
     @include mq(992px) {
       font-size: 1.4rem;
     }
+
+    @include mq(1200px) {
+      font-size: 1.6rem;
+    }
   }
 
   .port-img {
@@ -507,23 +542,22 @@ button {
     height: auto;
     border-radius: 0.5em;
 
-    //-webkit-border-radius: 0.5em;
-    //-moz-border-radius: 0.5em;
-    //-ms-border-radius: 0.5em;
-    //-o-border-radius: 0.5em;
-    //-webkit-border-radius: 0.5em;
-    //-moz-border-radius: 0.5em;
-    //-ms-border-radius: 0.5em;
-    //-o-border-radius: 0.5em;
+
+
     @include mq(992px) {
       width: 90%;
       height: auto;
       border-radius: 0.5em;
       margin: auto 1em 0 1em;
-      -webkit-border-radius: 0.5em;
-      -moz-border-radius: 0.5em;
-      -ms-border-radius: 0.5em;
-      -o-border-radius: 0.5em;
+
+    }
+
+    @include mq(1200px) {
+      width: 90%;
+      height: auto;
+      border-radius: 0.5em;
+      margin: auto 1em 0 1em;
+
     }
   }
 
@@ -535,21 +569,18 @@ button {
     float: none;
     text-align: center;
     padding: 0.3em;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 600;
     color: $background-color;
     font-family: $primary-font;
     letter-spacing: 0.1em;
     margin: 0.4em 0.01em 0 0.2em;
 
-    &:hover //-webkit-border-radius: 0.3em;
-    //-moz-border-radius: 0.3em;
-    //-ms-border-radius: 0.3em;
-    //-o-border-radius: 0.3em;
 
-      {
-      background: #8c39f9;
-      color: $text-color;
+    @include mq(1200px) {
+      padding: 0.2em;
+      font-size: 1.1rem;
+      font-weight: 500;
     }
   }
 
@@ -558,6 +589,10 @@ button {
 
     @include mq(768px) {
       font-size: 1.2rem;
+    }
+
+    @include mq(1200px) {
+      font-size: 1rem;
     }
   }
 }
@@ -573,11 +608,17 @@ button {
   //   width: 100%;
   //   display: block;
   // }
-  @include mq(992px) {
-    height: 70vh;
-    width: 100%;
+  // @include mq(992px) {
+  //   height: 70vh;
+  //   width: 100%;
 
-  }
+  // }
+
+  // @include mq(1200px) {
+  //   height: 70vh;
+  //   width: 100%;
+
+  // }
 
   .title {
     @include title;
@@ -633,6 +674,10 @@ button {
       margin: -4em 0 0 3em;
     }
 
+    @include mq(1200px) {
+      margin: -4em 0 0 3.8em;
+    }
+
   }
 
   .title2 {
@@ -647,6 +692,8 @@ button {
     @include mq(992px) {
       font-size: 1.9rem;
     }
+
+
   }
 
   .me-para2 {
@@ -727,6 +774,14 @@ button {
       margin: 11em auto auto 13em;
     }
 
+    @include mq(1200px) {
+      font-size: 1.8em;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      position: absolute;
+      margin: 10em auto auto 16em;
+    }
+
   }
 }
 
@@ -759,8 +814,13 @@ button {
     padding: 1.2em;
     position: absolute;
     margin: 22em auto auto 11em;
+  }
 
-
+  @include mq(1200px) {
+    width: 60vw;
+    padding: 1.4em;
+    position: absolute;
+    margin: 22em auto auto 14em;
   }
 
   #name,

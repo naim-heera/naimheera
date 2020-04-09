@@ -344,6 +344,21 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .roadmap .title {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .roadmap .road-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 98%;
+  }
+}
+
 .roadmap .skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,6 +389,13 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .roadmap img {
+    margin: 1.6em 0.4em 0.4em 0.4em;
+    width: 5.5em;
+  }
+}
+
 .progressbar .title {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
@@ -390,6 +412,12 @@ button {
 @media screen and (min-width: 992px) {
   .progressbar .title {
     font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .progressbar .title {
+    display: none;
   }
 }
 
@@ -452,6 +480,14 @@ button {
   .progressbar .progress {
     height: 1.4em;
     width: 45em;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .progressbar .progress {
+    height: 1.3em;
+    width: 37em;
     margin: 0 auto;
   }
 }
@@ -540,6 +576,20 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio .title {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio .port-blurb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .portfolio .portfolio-title {
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
@@ -560,6 +610,12 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio .portfolio-title {
+    font-size: 1.6rem;
+  }
+}
+
 .portfolio .port-img {
   width: 90%;
   height: auto;
@@ -572,10 +628,15 @@ button {
     height: auto;
     border-radius: 0.5em;
     margin: auto 1em 0 1em;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-    -ms-border-radius: 0.5em;
-    -o-border-radius: 0.5em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio .port-img {
+    width: 90%;
+    height: auto;
+    border-radius: 0.5em;
+    margin: auto 1em 0 1em;
   }
 }
 
@@ -587,7 +648,7 @@ button {
   float: none;
   text-align: center;
   padding: 0.3em;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #7510f7;
   font-family: "Poppins", sans-serif;
@@ -595,9 +656,12 @@ button {
   margin: 0.4em 0.01em 0 0.2em;
 }
 
-.portfolio .port-button:hover {
-  background: #8c39f9;
-  color: #ffffff;
+@media screen and (min-width: 1200px) {
+  .portfolio .port-button {
+    padding: 0.2em;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
 }
 
 .portfolio .me-para {
@@ -614,17 +678,16 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio .me-para {
+    font-size: 1rem;
+  }
+}
+
 .education {
   height: 70vh;
   width: 100%;
   display: none;
-}
-
-@media screen and (min-width: 992px) {
-  .education {
-    height: 70vh;
-    width: 100%;
-  }
 }
 
 .education .title {
@@ -689,6 +752,12 @@ button {
 @media screen and (min-width: 992px) {
   .contact .hire-me {
     margin: -4em 0 0 3em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact .hire-me {
+    margin: -4em 0 0 3.8em;
   }
 }
 
@@ -791,6 +860,16 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contact .contact-title {
+    font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    position: absolute;
+    margin: 10em auto auto 16em;
+  }
+}
+
 .contact-form {
   width: 95vw;
   background-color: "Poppins", sans-serif;
@@ -823,6 +902,15 @@ button {
     padding: 1.2em;
     position: absolute;
     margin: 22em auto auto 11em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form {
+    width: 60vw;
+    padding: 1.4em;
+    position: absolute;
+    margin: 22em auto auto 14em;
   }
 }
 
