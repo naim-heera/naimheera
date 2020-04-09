@@ -53,31 +53,29 @@ body {
 .menu {
   background-color: $background-color;
 
-  @include mq(1200px) {}
+
 
   .topnav {
     overflow: hidden;
     position: relative;
 
-
-    @include mq(1200px) {
-      height: 100vh;
-      width: 20vw;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: $background-color;
-      overflow-x: hidden;
-
+    @include mq (1200px) {
+      position: relative;
     }
+
   }
 
   #mylinks {
     background-color: $background-color;
     display: none;
 
-
+    @include mq(1200px) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 1em 2em 0 0;
+      cursor: pointer;
+    }
   }
 
 }
@@ -91,11 +89,16 @@ a {
   text-align: center;
   display: block;
   padding: 0.8em 0.9em;
+  cursor: pointer;
 
-  &:hover {
-    color: #000000;
-    text-decoration: underline;
-
+  @include mq(1200px) {
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.8em 0.9em;
+    cursor: pointer;
   }
 }
 
@@ -105,6 +108,11 @@ a {
   position: absolute;
   right: 0;
   top: 0;
+  cursor: pointer;
+
+  @include mq(1200px) {
+    display: none;
+  }
 }
 
 #logo {
@@ -113,6 +121,14 @@ a {
   font-weight: 600;
   margin-top: -0.4em;
   text-align: left;
+  cursor: pointer;
+
+  @include mq(1200px) {
+    position: absolute;
+    margin: 0.1em 0 0 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 }
 
 
@@ -130,6 +146,10 @@ a {
   @include mq(992px) {
     width: 200px;
   }
+
+  @include mq(1200px) {
+    width: 210px;
+  }
 }
 
 
@@ -144,6 +164,10 @@ a {
   background-color: $background-color;
   height: 17vh;
 
+  @include mq (1200px) {
+    height: 24vh;
+  }
+
   .typewrite {
     color: $text-color;
     font-family: $secondary-font;
@@ -157,6 +181,10 @@ a {
 
     @include mq(768px) {
       font-size: 1.3em;
+    }
+
+    @include mq(1200px) {
+      font-size: 1.4em;
     }
   }
 }
@@ -176,12 +204,7 @@ button {
   padding: 0.4em 1.2em;
   margin: 0.4em;
 
-  @include mq(768px) // -webkit-border-radius: 25px;
-
-  // -moz-border-radius: 25px;
-  // -ms-border-radius: 25px;
-  // -o-border-radius: 25px;
-    {
+  @include mq(768px) {
     font-size: 0.8em;
     font-weight: 500;
     letter-spacing: 0.09em;
@@ -189,10 +212,16 @@ button {
     margin: 0em 0.7em 0 0.7em;
   }
 
-  // -webkit-border-radius: 25px;
-  // -moz-border-radius: 25px;
-  // -ms-border-radius: 25px;
-  // -o-border-radius: 25px;
+  @include mq(1200px) {
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    padding: 0.5em 1.3em;
+    margin: 0em 0.7em 0 0.7em;
+    border: 2px solid $text-color;
+  }
+
+
 }
 
 
@@ -215,6 +244,25 @@ button {
       font-size: 2rem;
     }
 
+    @include mq(1200px) {
+      font-size: 2.2rem;
+    }
+
+  }
+
+  .about-me {
+    @include mq(1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+    }
+  }
+
+  .me {
+    @include mq(1200px) {
+      margin: 0.4em;
+    }
   }
 
   .me-img {
@@ -224,10 +272,6 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -1em;
-
-    &:hover {
-      width: 25%;
-    }
   }
 
   .me-h2 {
@@ -248,14 +292,9 @@ button {
       letter-spacing: 0.1em;
     }
 
-    @include mq(768px) {
+    @include mq(992px) {
       font-size: 1.5rem;
 
-    }
-
-
-    &:hover {
-      font-size: 1.6rem;
     }
   }
 
@@ -266,6 +305,12 @@ button {
   @include mq(768px) {
     font-size: 1.2em;
   }
+
+  @include mq(1200px) {
+    font-size: 1em;
+  }
+
+
 
 }
 

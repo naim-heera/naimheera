@@ -21,20 +21,29 @@ body {
 
 @media screen and (min-width: 1200px) {
   .menu .topnav {
-    height: 100vh;
-    width: 20vw;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #7510f7;
-    overflow-x: hidden;
+    position: relative;
   }
 }
 
 .menu #mylinks {
   background-color: #7510f7;
   display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu #mylinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1em 2em 0 0;
+    cursor: pointer;
+  }
 }
 
 a {
@@ -46,11 +55,19 @@ a {
   text-align: center;
   display: block;
   padding: 0.8em 0.9em;
+  cursor: pointer;
 }
 
-a:hover {
-  color: #000000;
-  text-decoration: underline;
+@media screen and (min-width: 1200px) {
+  a {
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.8em 0.9em;
+    cursor: pointer;
+  }
 }
 
 .icon {
@@ -59,6 +76,13 @@ a:hover {
   position: absolute;
   right: 0;
   top: 0;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon {
+    display: none;
+  }
 }
 
 #logo {
@@ -67,6 +91,16 @@ a:hover {
   font-weight: 600;
   margin-top: -0.4em;
   text-align: left;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  #logo {
+    position: absolute;
+    margin: 0.1em 0 0 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 }
 
 #profile-img {
@@ -89,6 +123,12 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  #profile-img {
+    width: 210px;
+  }
+}
+
 .content {
   text-align: center;
   background-color: #7510f7;
@@ -99,6 +139,12 @@ a:hover {
   text-align: center;
   background-color: #7510f7;
   height: 17vh;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 24vh;
+  }
 }
 
 .hero .typewrite {
@@ -118,6 +164,12 @@ a:hover {
 @media screen and (min-width: 768px) {
   .hero .typewrite {
     font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero .typewrite {
+    font-size: 1.4em;
   }
 }
 
@@ -144,6 +196,17 @@ button {
     letter-spacing: 0.09em;
     padding: 0.5em 1.3em;
     margin: 0em 0.7em 0 0.7em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  button {
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    padding: 0.5em 1.3em;
+    margin: 0em 0.7em 0 0.7em;
+    border: 2px solid #ffffff;
   }
 }
 
@@ -176,6 +239,34 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .about .title {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about .about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about .me {
+    margin: 0.4em;
+  }
+}
+
 .about .me-img {
   height: auto;
   width: 20%;
@@ -183,10 +274,6 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -1em;
-}
-
-.about .me-img:hover {
-  width: 25%;
 }
 
 .about .me-h2 {
@@ -212,14 +299,10 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .about .me-h2 {
     font-size: 1.5rem;
   }
-}
-
-.about .me-h2:hover {
-  font-size: 1.6rem;
 }
 
 .about .me-para {
@@ -233,6 +316,12 @@ button {
 @media screen and (min-width: 768px) {
   .about {
     font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    font-size: 1em;
   }
 }
 
