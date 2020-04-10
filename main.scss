@@ -383,6 +383,12 @@ button {
       width: 7em;
 
     }
+
+    @include mq(1890px) {
+      margin: 1.6em 0.4em 0.4em 0.4em;
+      width: 6.2em;
+
+    }
   }
 }
 
@@ -464,6 +470,12 @@ button {
     @include mq(1600px) {
       height: 1.3em;
       width: 37em;
+
+    }
+
+    @include mq(1600px) {
+      height: 1.3em;
+      width: 40em;
 
     }
 
@@ -717,6 +729,10 @@ button {
       margin: -4em 0 0 5.2em;
     }
 
+    @include mq(1890px) {
+      margin: -4em 0 0 6em;
+    }
+
   }
 
   .title2 {
@@ -837,6 +853,14 @@ button {
       margin: 10em auto auto 25em;
     }
 
+    @include mq(1890px) {
+      font-size: 1.8em;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      position: absolute;
+      margin: 10em auto auto 28em;
+    }
+
   }
 
 
@@ -892,6 +916,13 @@ button {
     padding: 1.4em;
     position: absolute;
     margin: 22em auto auto 20em;
+  }
+
+  @include mq(1890px) {
+    width: 60vw;
+    padding: 1.4em;
+    position: absolute;
+    margin: 22em auto auto 23em;
   }
 
   #name,

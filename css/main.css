@@ -421,6 +421,13 @@ button {
   }
 }
 
+@media screen and (min-width: 1890px) {
+  .roadmap img {
+    margin: 1.6em 0.4em 0.4em 0.4em;
+    width: 6.2em;
+  }
+}
+
 .progressbar .title {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
@@ -521,6 +528,13 @@ button {
   .progressbar .progress {
     height: 1.3em;
     width: 37em;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .progressbar .progress {
+    height: 1.3em;
+    width: 40em;
   }
 }
 
@@ -816,6 +830,12 @@ button {
   }
 }
 
+@media screen and (min-width: 1890px) {
+  .contact .hire-me {
+    margin: -4em 0 0 6em;
+  }
+}
+
 .contact .title2 {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
@@ -945,6 +965,16 @@ button {
   }
 }
 
+@media screen and (min-width: 1890px) {
+  .contact .contact-title {
+    font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    position: absolute;
+    margin: 10em auto auto 28em;
+  }
+}
+
 .contact-form {
   width: 95vw;
   background-color: "Poppins", sans-serif;
@@ -1004,6 +1034,15 @@ button {
     padding: 1.4em;
     position: absolute;
     margin: 22em auto auto 20em;
+  }
+}
+
+@media screen and (min-width: 1890px) {
+  .contact-form {
+    width: 60vw;
+    padding: 1.4em;
+    position: absolute;
+    margin: 22em auto auto 23em;
   }
 }
 
