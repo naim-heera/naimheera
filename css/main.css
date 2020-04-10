@@ -368,6 +368,15 @@ button {
   }
 }
 
+@media screen and (min-width: 1735px) {
+  .roadmap .road-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 98%;
+  }
+}
+
 .roadmap .skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,6 +411,13 @@ button {
   .roadmap img {
     margin: 1.6em 0.4em 0.4em 0.4em;
     width: 5.5em;
+  }
+}
+
+@media screen and (min-width: 1735px) {
+  .roadmap img {
+    margin: 1.6em 0.4em 0.4em 0.4em;
+    width: 7em;
   }
 }
 
@@ -530,8 +546,11 @@ button {
   height: 100%;
   width: 0;
   opacity: 0;
-  -webkit-transition: 4s ease 0.3s;
   transition: 4s ease 0.3s;
+  -webkit-transition: 4s ease 0.3s;
+  -moz-transition: 4s ease 0.3s;
+  -ms-transition: 4s ease 0.3s;
+  -o-transition: 4s ease 0.3s;
 }
 
 .progressbar .progress-done1 {
@@ -644,6 +663,10 @@ button {
     height: auto;
     border-radius: 0.5em;
     margin: auto 1em 0 1em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
   }
 }
 
@@ -653,6 +676,10 @@ button {
     height: auto;
     border-radius: 0.5em;
     margin: auto 1em 0 1em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
   }
 }
 
@@ -783,6 +810,12 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contact .hire-me {
+    margin: -4em 0 0 5.2em;
+  }
+}
+
 .contact .title2 {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
@@ -902,6 +935,16 @@ button {
   }
 }
 
+@media screen and (min-width: 1735px) {
+  .contact .contact-title {
+    font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    position: absolute;
+    margin: 10em auto auto 25em;
+  }
+}
+
 .contact-form {
   width: 95vw;
   background-color: "Poppins", sans-serif;
@@ -952,6 +995,15 @@ button {
     padding: 1.4em;
     position: absolute;
     margin: 22em auto auto 19em;
+  }
+}
+
+@media screen and (min-width: 1735px) {
+  .contact-form {
+    width: 60vw;
+    padding: 1.4em;
+    position: absolute;
+    margin: 22em auto auto 20em;
   }
 }
 

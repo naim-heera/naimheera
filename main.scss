@@ -343,6 +343,11 @@ button {
       width: 98%;
     }
 
+    @include mq(1735px) {
+      display: flex;
+      width: 98%;
+    }
+
 
   }
 
@@ -370,6 +375,12 @@ button {
     @include mq(1200px) {
       margin: 1.6em 0.4em 0.4em 0.4em;
       width: 5.5em;
+
+    }
+
+    @include mq(1735px) {
+      margin: 1.6em 0.4em 0.4em 0.4em;
+      width: 7em;
 
     }
   }
@@ -473,7 +484,10 @@ button {
     width: 0;
     opacity: 0;
     transition: 4s ease 0.3s;
-
+    -webkit-transition: 4s ease 0.3s;
+    -moz-transition: 4s ease 0.3s;
+    -ms-transition: 4s ease 0.3s;
+    -o-transition: 4s ease 0.3s;
   }
 
   .progress-done1 {
@@ -560,7 +574,10 @@ button {
       height: auto;
       border-radius: 0.5em;
       margin: auto 1em 0 1em;
-
+      -webkit-border-radius: 0.5em;
+      -moz-border-radius: 0.5em;
+      -ms-border-radius: 0.5em;
+      -o-border-radius: 0.5em;
     }
 
     @include mq(1200px) {
@@ -568,7 +585,10 @@ button {
       height: auto;
       border-radius: 0.5em;
       margin: auto 1em 0 1em;
-
+      -webkit-border-radius: 0.5em;
+      -moz-border-radius: 0.5em;
+      -ms-border-radius: 0.5em;
+      -o-border-radius: 0.5em;
     }
   }
 
@@ -693,6 +713,10 @@ button {
       margin: -4em 0 0 4.8em;
     }
 
+    @include mq(1200px) {
+      margin: -4em 0 0 5.2em;
+    }
+
   }
 
   .title2 {
@@ -805,6 +829,14 @@ button {
       margin: 10em auto auto 23em;
     }
 
+    @include mq(1735px) {
+      font-size: 1.8em;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      position: absolute;
+      margin: 10em auto auto 25em;
+    }
+
   }
 
 
@@ -853,6 +885,13 @@ button {
     padding: 1.4em;
     position: absolute;
     margin: 22em auto auto 19em;
+  }
+
+  @include mq(1735px) {
+    width: 60vw;
+    padding: 1.4em;
+    position: absolute;
+    margin: 22em auto auto 20em;
   }
 
   #name,
