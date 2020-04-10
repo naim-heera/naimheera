@@ -338,6 +338,11 @@ button {
       width: 98%;
     }
 
+    @include mq(1600px) {
+      display: flex;
+      width: 98%;
+    }
+
 
   }
 
@@ -439,10 +444,16 @@ button {
       margin: 0 auto;
     }
 
-    @include mq(992px) {
+    @include mq(1200px) {
       height: 1.3em;
       width: 37em;
       margin: 0 auto;
+    }
+
+    @include mq(1600px) {
+      height: 1.3em;
+      width: 37em;
+
     }
 
   }
@@ -678,6 +689,10 @@ button {
       margin: -4em 0 0 3.8em;
     }
 
+    @include mq(1200px) {
+      margin: -4em 0 0 4.8em;
+    }
+
   }
 
   .title2 {
@@ -782,7 +797,17 @@ button {
       margin: 10em auto auto 16em;
     }
 
+    @include mq(1600px) {
+      font-size: 1.8em;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      position: absolute;
+      margin: 10em auto auto 23em;
+    }
+
   }
+
+
 }
 
 .contact-form {
@@ -821,6 +846,13 @@ button {
     padding: 1.4em;
     position: absolute;
     margin: 22em auto auto 14em;
+  }
+
+  @include mq(1600px) {
+    width: 60vw;
+    padding: 1.4em;
+    position: absolute;
+    margin: 22em auto auto 19em;
   }
 
   #name,

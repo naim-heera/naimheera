@@ -359,6 +359,15 @@ button {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .roadmap .road-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 98%;
+  }
+}
+
 .roadmap .skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -484,11 +493,18 @@ button {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .progressbar .progress {
     height: 1.3em;
     width: 37em;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .progressbar .progress {
+    height: 1.3em;
+    width: 37em;
   }
 }
 
@@ -761,6 +777,12 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contact .hire-me {
+    margin: -4em 0 0 4.8em;
+  }
+}
+
 .contact .title2 {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
@@ -870,6 +892,16 @@ button {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .contact .contact-title {
+    font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    position: absolute;
+    margin: 10em auto auto 23em;
+  }
+}
+
 .contact-form {
   width: 95vw;
   background-color: "Poppins", sans-serif;
@@ -911,6 +943,15 @@ button {
     padding: 1.4em;
     position: absolute;
     margin: 22em auto auto 14em;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .contact-form {
+    width: 60vw;
+    padding: 1.4em;
+    position: absolute;
+    margin: 22em auto auto 19em;
   }
 }
 
