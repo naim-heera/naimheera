@@ -91,6 +91,8 @@ a {
   padding: 0.8em 0.9em;
   cursor: pointer;
 
+
+
   @include mq(1200px) {
     font-size: 1.1rem;
     letter-spacing: 0.1em;
@@ -163,6 +165,10 @@ a {
   text-align: center;
   background-color: $background-color;
   height: 17vh;
+
+  @include mq (992px) {
+    height: 24vh;
+  }
 
   @include mq (1200px) {
     height: 24vh;
@@ -548,9 +554,12 @@ button {
   }
 
   .port-blurb {
-    @include mq(1200px) {
+
+    @include mq(768px) {
       display: flex;
+      flex-direction: column;
     }
+
 
   }
 
@@ -579,13 +588,31 @@ button {
     height: auto;
     border-radius: 0.5em;
 
-
-
-    @include mq(992px) {
+    @include mq(768px) {
       width: 90%;
       height: auto;
       border-radius: 0.5em;
       margin: auto 1em 0 1em;
+      -webkit-border-radius: 0.5em;
+      -moz-border-radius: 0.5em;
+      -ms-border-radius: 0.5em;
+      -o-border-radius: 0.5em;
+    }
+
+    @include mq(992px) //-webkit-border-radius: 0.5em;
+    //-moz-border-radius: 0.5em;
+    //-ms-border-radius: 0.5em;
+    //-o-border-radius: 0.5em;
+    // -webkit-border-radius: 0.5em;
+    // -moz-border-radius: 0.5em;
+    // -ms-border-radius: 0.5em;
+    // -o-border-radius: 0.5em;
+
+      {
+      width: 90%;
+      height: auto;
+      border-radius: 0.5em;
+      margin: auto 2em 0 2em;
       -webkit-border-radius: 0.5em;
       -moz-border-radius: 0.5em;
       -ms-border-radius: 0.5em;
@@ -593,15 +620,22 @@ button {
     }
 
     @include mq(1200px) {
-      width: 90%;
+      display: flex;
+      width: 85%;
       height: auto;
       border-radius: 0.5em;
-      margin: auto 1em 0 1em;
+      margin: auto 5.5em 1em 5.5em;
       -webkit-border-radius: 0.5em;
       -moz-border-radius: 0.5em;
       -ms-border-radius: 0.5em;
       -o-border-radius: 0.5em;
     }
+
+    @include mq(1600px) {}
+
+    @include mq(1735px) {}
+
+    @include mq(1890px) {}
   }
 
   .port-button {
@@ -618,7 +652,6 @@ button {
     font-family: $primary-font;
     letter-spacing: 0.1em;
     margin: 0.4em 0.01em 0 0.2em;
-
 
     @include mq(1200px) {
       padding: 0.2em;
@@ -700,12 +733,20 @@ button {
     position: absolute;
     margin: -4em 0 0 1em;
     border-radius: 0.5em;
-
     //-webkit-border-radius: 0.5em;
     //-moz-border-radius: 0.5em;
     //-ms-border-radius: 0.5em;
     //-o-border-radius: 0.5em;
-    @include mq(480px) {
+    //-webkit-border-radius: 0.5em;
+    //-moz-border-radius: 0.5em;
+    //-ms-border-radius: 0.5em;
+    //-o-border-radius: 0.5em;
+    @include mq(480px) // -webkit-border-radius: 0.5em;
+    // -moz-border-radius: 0.5em;
+    // -ms-border-radius: 0.5em;
+    // -o-border-radius: 0.5em;
+
+      {
       margin: -4em 0 0 1.45em;
     }
 
@@ -721,11 +762,11 @@ button {
       margin: -4em 0 0 3.8em;
     }
 
-    @include mq(1200px) {
+    @include mq(1600px) {
       margin: -4em 0 0 4.8em;
     }
 
-    @include mq(1200px) {
+    @include mq(1735px) {
       margin: -4em 0 0 5.2em;
     }
 
@@ -858,7 +899,7 @@ button {
       font-weight: 400;
       letter-spacing: 0.1em;
       position: absolute;
-      margin: 10em auto auto 28em;
+      margin: 12em auto auto 28em;
     }
 
   }
@@ -922,7 +963,7 @@ button {
     width: 60vw;
     padding: 1.4em;
     position: absolute;
-    margin: 22em auto auto 23em;
+    margin: 24em auto auto 23em;
   }
 
   #name,
