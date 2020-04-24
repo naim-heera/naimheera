@@ -86,6 +86,7 @@ a {
 }
 
 #logo {
+  font-family: "Poppins", sans-serif;
   color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
@@ -138,7 +139,13 @@ a {
 .hero {
   text-align: center;
   background-color: #7510f7;
-  height: 17vh;
+  height: 19vh;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 22vh;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -149,7 +156,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    height: 24vh;
+    height: 26vh;
   }
 }
 
@@ -275,11 +282,17 @@ button {
 
 .about .me-img {
   height: auto;
-  width: 20%;
+  width: 10%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -1em;
+}
+
+@media screen and (min-width: 1200px) {
+  .about .me-img {
+    width: 25%;
+  }
 }
 
 .about .me-h2 {
@@ -493,7 +506,7 @@ button {
 .progressbar .progress {
   background-color: #e6e6e6;
   border-radius: 1.5em;
-  height: 1.2em;
+  height: 1em;
   width: 18em;
   margin: 1.2em auto;
 }
@@ -571,6 +584,10 @@ button {
   -moz-transition: 4s ease 0.3s;
   -ms-transition: 4s ease 0.3s;
   -o-transition: 4s ease 0.3s;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  -ms-border-radius: 1.5em;
+  -o-border-radius: 1.5em;
 }
 
 .progressbar .progress-done1 {
@@ -649,6 +666,24 @@ button {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .portfolio .port-blurb {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio .port-blurb {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .portfolio .portfolio-title {
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
@@ -678,6 +713,8 @@ button {
 .portfolio .port-img {
   width: 90%;
   height: auto;
+  display: block;
+  margin: 0 auto;
   border-radius: 0.5em;
 }
 
@@ -686,11 +723,7 @@ button {
     width: 90%;
     height: auto;
     border-radius: 0.5em;
-    margin: auto 1em 0 1em;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-    -ms-border-radius: 0.5em;
-    -o-border-radius: 0.5em;
+    margin: 0 auto;
   }
 }
 
@@ -699,27 +732,14 @@ button {
     width: 90%;
     height: auto;
     border-radius: 0.5em;
-    margin: auto 2em 0 2em;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-    -ms-border-radius: 0.5em;
-    -o-border-radius: 0.5em;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio .port-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 85%;
+    width: 90%;
     height: auto;
     border-radius: 0.5em;
-    margin: auto 5.5em 1em 5.5em;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-    -ms-border-radius: 0.5em;
-    -o-border-radius: 0.5em;
   }
 }
 
@@ -730,9 +750,9 @@ button {
   display: inline-block;
   float: none;
   text-align: center;
-  padding: 0.3em;
-  font-size: 1.2rem;
-  font-weight: 600;
+  padding: 0.2em;
+  font-size: 1rem;
+  font-weight: 500;
   color: #7510f7;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.1em;
@@ -741,9 +761,10 @@ button {
 
 @media screen and (min-width: 1200px) {
   .portfolio .port-button {
-    padding: 0.2em;
-    font-size: 1.1rem;
-    font-weight: 500;
+    padding: 0.3em;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1em 0.2em;
   }
 }
 
@@ -767,41 +788,6 @@ button {
   }
 }
 
-.education {
-  height: 70vh;
-  width: 100%;
-  display: none;
-}
-
-.education .title {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
-  color: #7510f7;
-  font-weight: 600;
-}
-
-@media screen and (min-width: 768px) {
-  .education .title {
-    font-size: 1.9em;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .education .title {
-    font-size: 2em;
-  }
-}
-
-.education .certificate {
-  width: 100%;
-}
-
-.education embed {
-  width: 600px;
-  height: 600px;
-  display: block;
-}
-
 .contact {
   background: #7510f7;
   height: 181vh;
@@ -813,8 +799,7 @@ button {
   background-color: #141c3a;
   -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
           box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #141c3a;
-  height: 37vh;
-  width: 90vw;
+  width: 90%;
   position: absolute;
   margin: -4em 0 0 1em;
   border-radius: 0.5em;
@@ -822,65 +807,65 @@ button {
 
 @media screen and (min-width: 480px) {
   .contact .hire-me {
-    margin: -4em 0 0 1.45em;
+    margin: -4em 0 auto 2em;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .contact .hire-me {
-    margin: -4em 0 0 2.45em;
+  .contact {
+    margin: -4em auto auto 3em;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .contact .hire-me {
+  .contact {
     margin: -4em 0 0 3em;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .contact .hire-me {
+  .contact {
     margin: -4em 0 0 3.8em;
   }
 }
 
 @media screen and (min-width: 1600px) {
-  .contact .hire-me {
+  .contact {
     margin: -4em 0 0 4.8em;
   }
 }
 
 @media screen and (min-width: 1735px) {
-  .contact .hire-me {
+  .contact {
     margin: -4em 0 0 5.2em;
   }
 }
 
 @media screen and (min-width: 1890px) {
-  .contact .hire-me {
+  .contact {
     margin: -4em 0 0 6em;
   }
 }
 
-.contact .title2 {
+.title2 {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
 }
 
 @media screen and (min-width: 768px) {
-  .contact .title2 {
+  .title2 {
     font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .contact .title2 {
+  .title2 {
     font-size: 1.9rem;
   }
 }
 
-.contact .me-para2 {
+.me-para2 {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.2em;
@@ -889,14 +874,14 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .contact .me-para2 {
+  .me-para2 {
     font-size: 1.1rem;
     letter-spacing: 0.1em;
     margin-bottom: 1.7em;
   }
 }
 
-.contact .button2 {
+.button2 {
   border: 1px solid #7510f7;
   font-weight: 500;
   background: transparent;
@@ -908,6 +893,7 @@ button {
   color: #ffffff;
   text-align: center;
   padding: 0.5em 1.5em;
+  margin: 0 0 1em 0;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.1em;
@@ -917,42 +903,38 @@ button {
   -o-border-radius: 1.5em;
 }
 
-.contact:hover {
-  background-color: #7510f7;
-}
-
-.contact .contact-title {
+.contact-title {
   font-family: "Poppins", sans-serif;
   font-size: 1.3em;
   color: #ffffff;
   font-weight: 400;
   letter-spacing: 0.1em;
   position: absolute;
-  margin: 13em auto auto 2.4em;
+  margin: 12em auto auto 2.4em;
 }
 
 @media screen and (min-width: 480px) {
-  .contact .contact-title {
+  .contact-title {
     font-size: 1.5em;
     font-weight: 400;
     letter-spacing: 0.1em;
     position: absolute;
-    margin: 11em auto auto 5em;
+    margin: 10em auto auto 8em;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .contact .contact-title {
+  .contact-title {
     font-size: 1.6em;
     font-weight: 500;
     letter-spacing: 0.1em;
     position: absolute;
-    margin: 11em auto auto 9.5em;
+    margin: 11em auto auto 12em;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .contact .contact-title {
+  .contact-title {
     font-size: 1.7em;
     font-weight: 400;
     letter-spacing: 0.1em;
@@ -962,7 +944,7 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .contact .contact-title {
+  .contact-title {
     font-size: 1.8em;
     font-weight: 400;
     letter-spacing: 0.1em;
@@ -972,7 +954,7 @@ button {
 }
 
 @media screen and (min-width: 1600px) {
-  .contact .contact-title {
+  .contact-title {
     font-size: 1.8em;
     font-weight: 400;
     letter-spacing: 0.1em;
@@ -982,7 +964,7 @@ button {
 }
 
 @media screen and (min-width: 1735px) {
-  .contact .contact-title {
+  .contact-title {
     font-size: 1.8em;
     font-weight: 400;
     letter-spacing: 0.1em;
@@ -992,7 +974,7 @@ button {
 }
 
 @media screen and (min-width: 1890px) {
-  .contact .contact-title {
+  .contact-title {
     font-size: 1.8em;
     font-weight: 400;
     letter-spacing: 0.1em;
@@ -1002,7 +984,7 @@ button {
 }
 
 .contact-form {
-  width: 95vw;
+  width: 90vw;
   background-color: "Poppins", sans-serif;
   padding: 1em;
   position: absolute;
@@ -1014,7 +996,7 @@ button {
     width: 70vw;
     padding: 1em;
     position: absolute;
-    margin: 19em auto auto 3.5em;
+    margin: 18em auto auto 5em;
   }
 }
 
@@ -1023,7 +1005,7 @@ button {
     width: 70vw;
     padding: 1.1em;
     position: absolute;
-    margin: 20em auto auto 6em;
+    margin: 20em auto auto 8em;
   }
 }
 
