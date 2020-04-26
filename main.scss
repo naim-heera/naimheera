@@ -140,20 +140,13 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
-  width: 170px;
+  width: 150px;
 
   @include mq(768px) {
-    width: 180px;
-  }
-
-  @include mq(992px) {
     width: 200px;
   }
-
-  @include mq(1200px) {
-    width: 210px;
-  }
 }
+
 
 
 .content {
@@ -165,44 +158,19 @@ a {
 .hero {
   text-align: center;
   background-color: $background-color;
-  height: 19vh;
-
-  @include mq (768px) {
-    height: 22vh;
-  }
-
-  @include mq (992px) {
-    height: 24vh;
-  }
-
-  @include mq (1200px) {
-    height: 26vh;
-  }
 
   .typewrite {
     color: $text-color;
     font-family: $secondary-font;
-    font-size: 0.8em;
+    font-size: calc(2vw + 0.5em);
     text-decoration: none;
     letter-spacing: 0.08em;
-
-    @include mq(480px) {
-      font-size: 1em;
-    }
-
-    @include mq(768px) {
-      font-size: 1.3em;
-    }
-
-    @include mq(1200px) {
-      font-size: 1.4em;
-    }
   }
 }
 
 button {
   font-family: $primary-font;
-  font-size: 0.7rem;
+  font-size: calc(0.5vw + 0.6em);
   background: transparent;
   color: $text-color;
   font-weight: 400;
@@ -213,25 +181,7 @@ button {
   display: inline-block;
   float: none;
   padding: 0.4em 1.2em;
-  margin: 0.4em;
-
-  @include mq(768px) {
-    font-size: 0.8em;
-    font-weight: 500;
-    letter-spacing: 0.09em;
-    padding: 0.5em 1.3em;
-    margin: 0em 0.7em 0 0.7em;
-  }
-
-  @include mq(1200px) {
-    font-size: 0.9em;
-    font-weight: 500;
-    letter-spacing: 0.09em;
-    padding: 0.5em 1.3em;
-    margin: 0em 0.7em 0 0.7em;
-    border: 2px solid $text-color;
-  }
-
+  margin: 0.6em 0 2em 0.6em;
 
 }
 
