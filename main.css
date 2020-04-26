@@ -48,7 +48,7 @@ body {
 
 a {
   font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
+  font-size: calc(0.7vw + 0.5rem);
   letter-spacing: 0.1em;
   color: #ffffff;
   text-decoration: none;
@@ -56,18 +56,6 @@ a {
   display: block;
   padding: 0.8em 0.9em;
   cursor: pointer;
-}
-
-@media screen and (min-width: 1200px) {
-  a {
-    font-size: 1.1rem;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    padding: 0.8em 0.9em;
-    cursor: pointer;
-  }
 }
 
 .icon {
@@ -88,7 +76,7 @@ a {
 #logo {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: calc(1vw + 0.5em);
   font-weight: 600;
   margin-top: -0.4em;
   text-align: left;
@@ -139,7 +127,7 @@ a {
 
 button {
   font-family: "Poppins", sans-serif;
-  font-size: calc(0.5vw + 0.6em);
+  font-size: calc(0.5vw + 0.6rem);
   background: transparent;
   color: #ffffff;
   font-weight: 400;
@@ -155,258 +143,106 @@ button {
 
 .about {
   margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
 .about .title {
+  width: 100%;
+}
+
+.about .title h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: calc(1vw + 1.2rem);
   color: #7510f7;
   font-weight: 600;
 }
 
-@media screen and (min-width: 480px) {
-  .about .title {
-    font-size: 1.7rem;
-  }
+.about .about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
-@media screen and (min-width: 768px) {
-  .about .title {
-    font-size: 1.9rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .about .title {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .about .title {
-    font-size: 2.2rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .about .about-me {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .about .me {
-    margin: 0.4em;
-  }
-}
-
-.about .me-img {
+.about .me .me-img {
   height: auto;
-  width: 10%;
+  width: 15%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -1em;
 }
 
-@media screen and (min-width: 1200px) {
-  .about .me-img {
-    width: 25%;
-  }
-}
-
 .about .me-h2 {
   font-family: "Poppins", sans-serif;
   color: #009999;
-  font-size: 1.3rem;
+  font-size: calc(1vw + 0.8rem);
   font-weight: 600;
   letter-spacing: 0.1em;
-  margin-bottom: -1em;
-}
-
-@media screen and (min-width: 480px) {
-  .about .me-h2 {
-    margin-bottom: -0.5em;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .about .me-h2 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .about .me-h2 {
-    font-size: 1.5rem;
-  }
 }
 
 .about .me-para {
   font-family: "Poppins", sans-serif;
-  font-size: 1.1em;
+  font-size: calc(0.5vw + 0.8rem);
   color: #000000;
   letter-spacing: 0.1em;
   padding-bottom: 1em;
 }
 
-@media screen and (min-width: 768px) {
-  .about {
-    font-size: 1.2em;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .about {
-    font-size: 1em;
-  }
-}
-
 .roadmap .title {
+  width: 100%;
+}
+
+.roadmap .title h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: calc(1vw + 1.2rem);
   color: #7510f7;
   font-weight: 600;
 }
 
-@media screen and (min-width: 768px) {
-  .roadmap .title {
-    font-size: 1.9rem;
-  }
+.roadmap .road-bar .skills .img-skill img {
+  width: calc(5vw + 2em);
+  margin: 0.6em;
 }
 
-@media screen and (min-width: 992px) {
-  .roadmap .title {
-    font-size: 2rem;
-  }
+.roadmap .road-bar .progressbar .title {
+  width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
-  .roadmap .title {
-    font-size: 2.2rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .roadmap .road-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 98%;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .roadmap .road-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 98%;
-  }
-}
-
-@media screen and (min-width: 1735px) {
-  .roadmap .road-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 98%;
-  }
-}
-
-.roadmap .skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.roadmap img {
-  margin: 0.5em;
-  width: 3em;
-}
-
-@media screen and (min-width: 768px) {
-  .roadmap img {
-    margin: 0.5em;
-    width: 5em;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .roadmap img {
-    margin: 0.5em;
-    width: 6em;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .roadmap img {
-    margin: 1.6em 0.4em 0.4em 0.4em;
-    width: 5.5em;
-  }
-}
-
-@media screen and (min-width: 1735px) {
-  .roadmap img {
-    margin: 1.6em 0.4em 0.4em 0.4em;
-    width: 7em;
-  }
-}
-
-@media screen and (min-width: 1890px) {
-  .roadmap img {
-    margin: 1.6em 0.4em 0.4em 0.4em;
-    width: 6.2em;
-  }
-}
-
-.progressbar .title {
+.roadmap .road-bar .progressbar .title h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: calc(1vw + 1.2rem);
   color: #7510f7;
   font-weight: 600;
 }
 
-@media screen and (min-width: 768px) {
-  .progressbar .title {
-    font-size: 1.9rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .progressbar .title {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .progressbar .title {
-    display: none;
-  }
-}
-
-.progressbar .skill-progress {
+.roadmap .road-bar .progressbar .skill-progress {
   margin-bottom: 0.6em;
 }
 
-.progressbar .skill-title {
+.roadmap .road-bar .progressbar .skill-title {
   font-family: "Poppins", sans-serif;
   font-size: 0.8em;
   color: #666666;
@@ -414,80 +250,19 @@ button {
   margin-bottom: -1em;
 }
 
-@media screen and (min-width: 480px) {
-  .progressbar .skill-title {
-    font-size: 0.9em;
-    margin-bottom: -0.01em;
-  }
+.roadmap .road-bar .progressbar .skill-progress {
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
-  .progressbar .skill-title {
-    margin-bottom: -0.01em;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .progressbar .skill-title {
-    font-size: 1em;
-  }
-}
-
-.progressbar .progress {
+.roadmap .road-bar .progressbar .skill-progress .progress {
   background-color: #e6e6e6;
   border-radius: 1.5em;
   height: 1em;
-  width: 18em;
+  width: calc(30vw + 10em);
   margin: 1.2em auto;
 }
 
-@media screen and (min-width: 480px) {
-  .progressbar .progress {
-    height: 1.2em;
-    width: 27em;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .progressbar .progress {
-    height: 1.3em;
-    width: 40em;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .progressbar .progress {
-    height: 1.4em;
-    width: 45em;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .progressbar .progress {
-    height: 1.3em;
-    width: 37em;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .progressbar .progress {
-    height: 1.3em;
-    width: 37em;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .progressbar .progress {
-    height: 1.3em;
-    width: 40em;
-  }
-}
-
-.progressbar .progress-done {
+.roadmap .road-bar .progressbar .skill-progress .progress-done {
   background: -webkit-gradient(linear, left top, right top, from(#ff0844), to(#ffb199));
   background: linear-gradient(to right, #ff0844 0%, #ffb199 100%);
   -webkit-box-shadow: 0 3px 3px -5px #ff0844, 0 2px 5px #ffb199;
@@ -520,35 +295,35 @@ button {
   -o-border-radius: 1.5em;
 }
 
-.progressbar .progress-done1 {
+.roadmap .road-bar .progressbar .skill-progress .progress-done1 {
   background: -webkit-gradient(linear, left top, right top, from(#1477c8), to(#5eabeb));
   background: linear-gradient(to right, #1477c8 0%, #5eabeb 100%);
   -webkit-box-shadow: 0 3px 3px -5px #1477c8, 0 2px 5px #5eabeb;
           box-shadow: 0 3px 3px -5px #1477c8, 0 2px 5px #5eabeb;
 }
 
-.progressbar .progress-done2 {
+.roadmap .road-bar .progressbar .skill-progress .progress-done2 {
   background: -webkit-gradient(linear, left top, right top, from(#c471f5), to(#fa71cd));
   background: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
   -webkit-box-shadow: 0 3px 3px -5px #c471f5, 0 2px 5px #fa71cd;
           box-shadow: 0 3px 3px -5px #c471f5, 0 2px 5px #fa71cd;
 }
 
-.progressbar .progress-done3 {
+.roadmap .road-bar .progressbar .skill-progress .progress-done3 {
   background: -webkit-gradient(linear, left top, right top, from(#ff5858), to(#f09819));
   background: linear-gradient(to right, #ff5858 0%, #f09819 100%);
   -webkit-box-shadow: 0 3px 3px -5px #ff5858, 0 2px 5px #f09819;
           box-shadow: 0 3px 3px -5px #ff5858, 0 2px 5px #f09819;
 }
 
-.progressbar .progress-done4 {
+.roadmap .road-bar .progressbar .skill-progress .progress-done4 {
   background: -webkit-gradient(linear, left top, right top, from(#48be58), to(#acd649));
   background: linear-gradient(to right, #48be58 0%, #acd649 100%);
   -webkit-box-shadow: 0 3px 3px -5px #96e6a1, 0 2px 5px #acd649;
           box-shadow: 0 3px 3px -5px #96e6a1, 0 2px 5px #acd649;
 }
 
-.progressbar .progress-done5 {
+.roadmap .road-bar .progressbar .skill-progress .progress-done5 {
   background: -webkit-gradient(linear, left top, right top, from(#2614c8), to(#6b5fd8));
   background: linear-gradient(to right, #2614c8 0%, #6b5fd8 100%);
   -webkit-box-shadow: 0 3px 3px -5px #2614c8, 0 2px 5px #5445d8;
@@ -561,7 +336,7 @@ button {
 
 .portfolio .title {
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: calc(1vw + 1.2rem);
   color: #7510f7;
   font-weight: 600;
 }
@@ -700,7 +475,7 @@ button {
 
 .portfolio .me-para {
   font-family: "Poppins", sans-serif;
-  font-size: 1.1em;
+  font-size: calc(0.5vw + 0.8rem);
   color: #000000;
   letter-spacing: 0.1em;
   padding-bottom: 1em;

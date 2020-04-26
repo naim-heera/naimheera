@@ -10,14 +10,14 @@ $secondary-color: #009999;
 
 @mixin title {
   font-family: $primary-font;
-  font-size: 1.5rem;
+  font-size: calc(1vw + 1.2rem);
   color: $background-color;
   font-weight: 600;
 }
 
 @mixin paragraph {
   font-family: $primary-font;
-  font-size: 1.1em;
+  font-size: calc(0.5vw + 0.8rem);
   color: #000000;
   letter-spacing: 0.1em;
   padding-bottom: 1em;
@@ -82,7 +82,7 @@ body {
 
 a {
   font-family: $primary-font;
-  font-size: 0.8rem;
+  font-size: calc(0.7vw + 0.5rem);
   letter-spacing: 0.1em;
   color: $text-color;
   text-decoration: none;
@@ -93,15 +93,7 @@ a {
 
 
 
-  @include mq(1200px) {
-    font-size: 1.1rem;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    padding: 0.8em 0.9em;
-    cursor: pointer;
-  }
+
 }
 
 .icon {
@@ -120,7 +112,7 @@ a {
 #logo {
   font-family: $primary-font;
   color: $text-color;
-  font-size: 1rem;
+  font-size: calc(1vw + 0.5em);
   font-weight: 600;
   margin-top: -0.4em;
   text-align: left;
@@ -170,7 +162,7 @@ a {
 
 button {
   font-family: $primary-font;
-  font-size: calc(0.5vw + 0.6em);
+  font-size: calc(0.5vw + 0.6rem);
   background: transparent;
   color: $text-color;
   font-weight: 400;
@@ -188,314 +180,180 @@ button {
 
 .about {
   margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
 
 
   .title {
-    @include title;
+    width: 100%;
 
-    @include mq(480px) {
-      font-size: 1.7rem;
+    h1 {
+      @include title;
+
     }
-
-    @include mq(768px) {
-      font-size: 1.9rem;
-    }
-
-    @include mq(992px) {
-      font-size: 2rem;
-    }
-
-    @include mq(1200px) {
-      font-size: 2.2rem;
-    }
-
   }
 
   .about-me {
-    @include mq(1200px) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-self: center;
-    }
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
   }
 
   .me {
-    @include mq(1200px) {
-      margin: 0.4em;
-    }
-  }
 
-  .me-img {
-    height: auto;
-    width: 10%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -1em;
+    .me-img {
+      height: auto;
+      width: 15%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: -1em;
 
-    @include mq(1200px) {
-      width: 25%;
     }
   }
 
   .me-h2 {
     font-family: $primary-font;
     color: $secondary-color;
-    font-size: 1.3rem;
+    font-size: calc(1vw + 0.8rem);
     font-weight: 600;
     letter-spacing: 0.1em;
-    margin-bottom: -1em;
-
-    @include mq(480px) {
-      margin-bottom: -0.5em;
-    }
-
-    @include mq(768px) {
-      font-size: 1.4rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-    }
-
-    @include mq(992px) {
-      font-size: 1.5rem;
-
-    }
   }
 
   .me-para {
     @include paragraph;
   }
-
-  @include mq(768px) {
-    font-size: 1.2em;
-  }
-
-  @include mq(1200px) {
-    font-size: 1em;
-  }
-
-
-
 }
+
+
 
 .roadmap {
 
+
   .title {
-    @include title;
+    width: 100%;
 
-    @include mq(768px) {
-      font-size: 1.9rem;
-    }
+    h1 {
+      @include title;
 
-    @include mq(992px) {
-      font-size: 2rem;
-    }
-
-    @include mq(1200px) {
-      font-size: 2.2rem;
     }
   }
 
   .road-bar {
-    @include mq(1200px) {
-      display: flex;
-      width: 98%;
+
+    .skills {
+
+
+      .img-skill {
+        img {
+          width: calc(5vw + 2em);
+          margin: 0.6em;
+        }
+      }
     }
 
-    @include mq(1600px) {
-      display: flex;
-      width: 98%;
+    .progressbar {
+
+
+      .title {
+        width: 100%;
+
+        h1 {
+          @include title;
+
+        }
+      }
+
+
+      .skill-progress {
+        margin-bottom: 0.6em;
+      }
+
+      .skill-title {
+        font-family: $primary-font;
+        font-size: 0.8em;
+        color: #666666;
+        font-weight: 600;
+        margin-bottom: -1em;
+
+      }
+
+      .skill-progress {
+
+        margin: 0 auto;
+
+        .progress {
+          background-color: #e6e6e6;
+          border-radius: 1.5em;
+          height: 1em;
+          width: calc(30vw + 10em);
+          margin: 1.2em auto;
+
+
+        }
+
+        .progress-done {
+          background: linear-gradient(to right, #ff0844 0%, #ffb199 100%);
+          box-shadow: 0 3px 3px -5px #ff0844, 0 2px 5px #ffb199;
+          border-radius: 1.5em;
+          color: $text-color;
+          font-family: $primary-font;
+          font-size: 0.8rem;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 0;
+          opacity: 0;
+          transition: 4s ease 0.3s;
+          -webkit-transition: 4s ease 0.3s;
+          -moz-transition: 4s ease 0.3s;
+          -ms-transition: 4s ease 0.3s;
+          -o-transition: 4s ease 0.3s;
+          -webkit-border-radius: 1.5em;
+          -moz-border-radius: 1.5em;
+          -ms-border-radius: 1.5em;
+          -o-border-radius: 1.5em;
+        }
+
+        .progress-done1 {
+          background: linear-gradient(to right, #1477c8 0%, #5eabeb 100%);
+          box-shadow: 0 3px 3px -5px #1477c8, 0 2px 5px #5eabeb;
+        }
+
+        .progress-done2 {
+          background: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
+          box-shadow: 0 3px 3px -5px #c471f5, 0 2px 5px #fa71cd;
+        }
+
+        .progress-done3 {
+          background: linear-gradient(to right, #ff5858 0%, #f09819 100%);
+          box-shadow: 0 3px 3px -5px #ff5858, 0 2px 5px #f09819;
+        }
+
+        .progress-done4 {
+          background: linear-gradient(to right, #48be58 0%, #acd649 100%);
+          box-shadow: 0 3px 3px -5px #96e6a1, 0 2px 5px #acd649;
+        }
+
+        .progress-done5 {
+          background: linear-gradient(to right, #2614c8 0%, #6b5fd8 100%);
+          box-shadow: 0 3px 3px -5px #2614c8, 0 2px 5px #5445d8;
+        }
+      }
     }
-
-    @include mq(1735px) {
-      display: flex;
-      width: 98%;
-    }
-
-
   }
 
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 
-  }
-
-  img {
-    margin: 0.5em;
-    width: 3em;
-
-    @include mq(768px) {
-      margin: 0.5em;
-      width: 5em;
-    }
-
-    @include mq(992px) {
-      margin: 0.5em;
-      width: 6em;
-    }
-
-    @include mq(1200px) {
-      margin: 1.6em 0.4em 0.4em 0.4em;
-      width: 5.5em;
-
-    }
-
-    @include mq(1735px) {
-      margin: 1.6em 0.4em 0.4em 0.4em;
-      width: 7em;
-
-    }
-
-    @include mq(1890px) {
-      margin: 1.6em 0.4em 0.4em 0.4em;
-      width: 6.2em;
-
-    }
-  }
 }
 
-.progressbar {
-
-  .title {
-    @include title;
-
-    @include mq(768px) {
-      font-size: 1.9rem;
-    }
-
-    @include mq(992px) {
-      font-size: 2rem;
-    }
-
-    @include mq(1200px) {
-      display: none;
-    }
-  }
-
-  .skill-progress {
-    margin-bottom: 0.6em;
-  }
-
-  .skill-title {
-    font-family: $primary-font;
-    font-size: 0.8em;
-    color: #666666;
-    font-weight: 600;
-    margin-bottom: -1em;
-
-    @include mq(480px) {
-      font-size: 0.9em;
-      margin-bottom: -0.01em;
-    }
-
-    @include mq(768px) {
-      margin-bottom: -0.01em;
-    }
-
-    @include mq(992px) {
-      font-size: 1em;
-    }
-
-  }
-
-  .progress {
-    background-color: #e6e6e6;
-    border-radius: 1.5em;
-    height: 1em;
-    width: 18em;
-    margin: 1.2em auto;
-
-    @include mq(480px) {
-      height: 1.2em;
-      width: 27em;
-      margin: 0 auto;
-    }
-
-    @include mq(768px) {
-      height: 1.3em;
-      width: 40em;
-      margin: 0 auto;
-    }
-
-    @include mq(992px) {
-      height: 1.4em;
-      width: 45em;
-      margin: 0 auto;
-    }
-
-    @include mq(1200px) {
-      height: 1.3em;
-      width: 37em;
-      margin: 0 auto;
-    }
-
-    @include mq(1600px) {
-      height: 1.3em;
-      width: 37em;
-
-    }
-
-    @include mq(1600px) {
-      height: 1.3em;
-      width: 40em;
-
-    }
-
-  }
-
-  .progress-done {
-    background: linear-gradient(to right, #ff0844 0%, #ffb199 100%);
-    box-shadow: 0 3px 3px -5px #ff0844, 0 2px 5px #ffb199;
-    border-radius: 1.5em;
-    color: $text-color;
-    font-family: $primary-font;
-    font-size: 0.8rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 0;
-    opacity: 0;
-    transition: 4s ease 0.3s;
-    -webkit-transition: 4s ease 0.3s;
-    -moz-transition: 4s ease 0.3s;
-    -ms-transition: 4s ease 0.3s;
-    -o-transition: 4s ease 0.3s;
-    -webkit-border-radius: 1.5em;
-    -moz-border-radius: 1.5em;
-    -ms-border-radius: 1.5em;
-    -o-border-radius: 1.5em;
-  }
-
-  .progress-done1 {
-    background: linear-gradient(to right, #1477c8 0%, #5eabeb 100%);
-    box-shadow: 0 3px 3px -5px #1477c8, 0 2px 5px #5eabeb;
-  }
-
-  .progress-done2 {
-    background: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
-    box-shadow: 0 3px 3px -5px #c471f5, 0 2px 5px #fa71cd;
-  }
-
-  .progress-done3 {
-    background: linear-gradient(to right, #ff5858 0%, #f09819 100%);
-    box-shadow: 0 3px 3px -5px #ff5858, 0 2px 5px #f09819;
-  }
-
-  .progress-done4 {
-    background: linear-gradient(to right, #48be58 0%, #acd649 100%);
-    box-shadow: 0 3px 3px -5px #96e6a1, 0 2px 5px #acd649;
-  }
-
-  .progress-done5 {
-    background: linear-gradient(to right, #2614c8 0%, #6b5fd8 100%);
-    box-shadow: 0 3px 3px -5px #2614c8, 0 2px 5px #5445d8;
-  }
-}
 
 .portfolio {
   margin-top: 3em;
