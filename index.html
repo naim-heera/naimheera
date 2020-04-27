@@ -17,22 +17,26 @@
 <body>
   <div class="container">
     <section class="menu">
-      <div class="topnav">
-        <a href="#home" id="logo" class="active">NH</a>
+      <header>
+        <div class="mobile-menu">
+          <h1 class="logo">NH</h1>
+          <button class="menu-toggle" role="button">
+            <div class="hamburger"></div>
+          </button>
+          <nav class="site-nav site-nav--closed">
+            <ul>
+              <li><a href=""><i class="fa fa-home site-nav--icon"></i>Home</a></li>
+              <li><a href=""><i class="fa fa-info site-nav--icon"></i>About</a></li>
+              <li><a href=""><i class="fa fa-pencil site-nav--icon"></i>Blog</a></li>
+              <li><a href=""><i class="fa fa-usd site-nav--icon"></i>Pricing</a></li>
+              <li><a href=""><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
+            </ul>
+          </nav>
 
+        </div>
 
-        <nav id="mylinks">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#skills">Skills</a>
-          <a href="#education">Education</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars" id="burger"></i>
-        </a>
-      </div>
+      </header>
+
       <img src="img/profile.png" id="profile-img" alt="profile">
     </section>
 

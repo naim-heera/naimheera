@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Playfair+Display:400,500,600,700,800,900|Poppins:300,400,500,600,700,800,900&display=swap');
 
 $primary-font: 'Poppins',
@@ -46,86 +47,300 @@ body {
 
 .container {
   background-color: $background-color;
-
-  @include mq(1200px) {}
 }
 
-.menu {
-  background-color: $background-color;
-
-
-
-  .topnav {
-    overflow: hidden;
-    position: relative;
-
-    @include mq (1200px) {
-      position: relative;
-    }
-
-  }
-
-  #mylinks {
-    background-color: $background-color;
-    display: none;
-
-    @include mq(1200px) {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      margin: 1em 2em 0 0;
-      cursor: pointer;
-    }
-  }
-
-}
-
-a {
-  font-family: $primary-font;
-  font-size: calc(0.7vw + 0.5rem);
-  letter-spacing: 0.1em;
-  color: $text-color;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-  padding: 0.8em 0.9em;
-  cursor: pointer;
 
 
 
 
-}
+header {
 
-.icon {
   background: $background-color;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-
-  @include mq(1200px) {
-    display: none;
-  }
-}
-
-#logo {
-  font-family: $primary-font;
   color: $text-color;
-  font-size: calc(1vw + 0.5em);
-  font-weight: 600;
-  margin-top: -0.4em;
-  text-align: left;
-  cursor: pointer;
+  padding: 0.5em 1em;
+  position: relative;
 
-  @include mq(1200px) {
-    position: absolute;
-    margin: 0.1em 0 0 0;
-    font-size: 1.5rem;
-    cursor: pointer;
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  .mobile-menu {
+    // width: 95%;
+    // max-width: 1000px;
+    margin: 0 auto;
   }
 }
 
+.logo {
+  float: left;
+  font-size: calc(0.5vw + 1rem);
+  font-family: $primary-font;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  // span {
+  //   font-weight: 400;
+  // }
+}
+
+.site-nav {
+  position: fixed;
+  top: 0;
+  right: 0%;
+  bottom: 0;
+  width: 100%;
+  background: $background-color;
+  transform: translateX(100%);
+  transition: transform ease-in-out 750ms;
+}
+
+.site-nav--open {
+  transform: translateX(0);
+}
+
+@supports (clip-path: circle(0px)) {
+  .site-nav {
+    transform: none;
+    clip-path: circle(0px at top right);
+    transition: clip-path ease-in-out 700ms;
+
+    &.site-nav--closed {
+      transition-delay: 200ms;
+    }
+  }
+
+  .site-nav--open {
+    clip-path: circle(250% at top right);
+  }
+}
+
+.site-nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    height: 70%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  li {
+    height: 100%;
+
+    // &:not(:last-child) {
+    //   border-bottom: 2px solid $secondary-color;
+    // }
+  }
+
+  a {
+    color: $text-color;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $primary-font;
+    font-size: calc(0.7vw + 0.7rem);
+    letter-spacing: 0.1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+      background: $secondary-color;
+      color: $text-color;
+    }
+  }
+}
+
+.site-nav--icon {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: #ebd5d5;
+}
+
+.menu-toggle {
+  display: block;
+  font-size: 0.7rem;
+  border: 0;
+  background: 0;
+  padding: 1em;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  cursor: pointer;
+  z-index: 1;
+
+  // &:focus {
+  //   outline: 1px solid $text-color;
+  // }
+}
+
+.open:focus {
+  outline: none;
+}
+
+.hamburger {
+  content: "";
+  display: block;
+  background: $text-color;
+  height: 3px;
+  width: 2em;
+  border-radius: 3px;
+  transition: transform ease-in-out 500ms, opacity linear 300ms;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    background: $text-color;
+    height: 3px;
+    width: 2em;
+    border-radius: 3px;
+    transition: transform ease-in-out 500ms, opacity linear 300ms;
+  }
+
+  &::before {
+    transform: translateY(-6px);
+  }
+
+  &::after {
+    transform: translateY(3px);
+  }
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+
+  &::before {
+    opacity: 0;
+  }
+
+  &::after {
+    transform: translateY(-3px) rotate(-90deg);
+  }
+}
+
+:root {
+  --bezier: cubic-bezier(0.34, 0.05, 0.52, 1);
+}
+
+.menu-toggle {
+  transition: transform var(--bezier) 250ms;
+
+  &.open:hover {
+    transform: scale(1.2);
+  }
+}
+
+.site-nav a {
+  transition: background var(--bezier) 150ms;
+}
+
+.open {
+  &.menu-toggle:hover .hamburger {
+    transform: rotate(1.125turn);
+  }
+
+  .hamburger {
+    transform: rotate(45deg);
+  }
+}
+
+
+.site-nav li {
+  opacity: 0;
+  transition: opacity 350ms linear;
+}
+
+.site-nav--open li {
+  animation: fadeIn var(--bezier) 750ms forwards;
+
+  &:nth-child(1) {
+    animation-delay: 100ms;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 200ms;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 300ms;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 400ms;
+  }
+
+  &:nth-child(5) {
+    animation-delay: 500ms;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  75% {
+    opacity: .2;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  70% {
+    opactiy: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+}
+
+.site-nav--closed li {
+  opacity: 1;
+  animation: fadeOut var(--bezier) 500ms forwards;
+
+  &:nth-child(1) {
+    animation-delay: 500ms;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 400ms;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 300ms;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 200ms;
+  }
+
+  &:nth-child(5) {
+    animation-delay: 100ms;
+  }
+}
 
 #profile-img {
   display: block;
